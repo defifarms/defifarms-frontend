@@ -1,0 +1,49 @@
+{
+  "name": "DefiFarms",
+  "version": "1.1.0",
+  "description": "DefiFarms  - The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
+  },
+  "keywords": [
+    "defifarms", 
+    "defi",
+    "nft",
+    "nft protocol",
+    "amm", 
+    "yield farming", 
+    "yield farm",
+    "auto liquidity provider"
+  ],
+  "dependencies": {
+    "@material-ui/core": "4.9.13",
+    "@material-ui/icons": "4.9.1",
+    "@zeit/next-sass": "1.0.1",
+    "classnames": "^2.3.1",
+    "clsx": "^1.1.1",
+    "gsap": "^3.6.1",
+    "moment": "2.25.3",
+    "next": "^10.2.0",
+    "next-compose-plugins": "2.2.0",
+    "next-fonts": "^1.5.1",
+    "next-i18next": "^8.2.0",
+    "next-images": "1.3.1",
+    "nextjs-redirect": "2.0.2",
+    "node-sass": "4.14.1",
+    "nouislider": "14.4.0",
+    "path": "^0.12.7",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.13.1",
+    "react-slick": "0.25.2",
+    "react-swipeable-views": "0.13.9",
+    "styled-components": "5.1.0",
+    "webpack": "4.43.0"
+  }
+}
