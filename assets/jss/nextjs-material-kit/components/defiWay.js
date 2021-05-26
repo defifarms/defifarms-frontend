@@ -103,6 +103,17 @@ const futureStyle = (theme) => ({
     margin: "0",
     padding: "0",
   },
+  descriptionLogo: {
+    fontFamily: "SF UI Text",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "18px",
+    lineHeight: "27px",
+    color: "#fff",
+    margin: "0",
+    padding: "5px 0 0",
+    textAlign: "center",
+  },
   flex: {
     display: "flex",
     flexWrap: "wrap",

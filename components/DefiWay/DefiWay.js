@@ -125,6 +125,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 height="150"
                 layout="fixed"
               />
+              <h5 className={classes.descriptionLogo}>KaiKaiKim</h5>
             </div>
             <div className={classes.partnersIcon}>
               <Image
@@ -134,6 +135,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 height="150"
                 layout="fixed"
               />
+              <h5 className={classes.descriptionLogo}>Orient Capital</h5>
             </div>
             <div className={classes.partnersIcon}>
               <Image
@@ -143,6 +145,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 height="150"
                 layout="fixed"
               />
+              <h5 className={classes.descriptionLogo}>Seoul Fortune venture</h5>
             </div>
             <div className={classes.partnersIcon}>
               <Image
@@ -152,6 +155,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 height="150"
                 layout="fixed"
               />
+              <h5 className={classes.descriptionLogo}>MintLAB</h5>
             </div>
             <div className={classes.partnersIcon}>
               <Image
@@ -161,6 +165,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 height="150"
                 layout="fixed"
               />
+              <h5 className={classes.descriptionLogo}>IchiTek</h5>
             </div>
           </div>
         </div>
