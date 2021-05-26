@@ -176,14 +176,11 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                     className={classes.partnersIcon}
                     src={av}
                     alt="av"
-                    width="200"
-                    height="55"
+                    width="150"
+                    height="50"
                     layout="intrinsic"
                   />
-                  <h5
-                    className={classes.descriptionLogo}
-                    style={{ width: "182px" }}
-                  >
+                  <h5 className={classes.descriptionLogo}>
                     Andromeda Research
                   </h5>
                 </div>
