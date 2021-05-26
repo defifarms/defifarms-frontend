@@ -79,8 +79,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={bsc}
                 alt="bsc"
-                width="199"
-                height="79"
+                width="150"
+                height="50"
                 layout="intrinsic"
                 className={classes.partnersIcon}
               />
@@ -89,8 +89,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={basic}
                 alt="basic"
-                width="220"
-                height="79"
+                width="150"
+                height="50"
                 layout="intrinsic"
                 className={classes.partnersIcon}
               />
@@ -100,8 +100,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 className={classes.partnersIcon}
                 src={av}
                 alt="av"
-                width="300"
-                height="50"
+                width="200"
+                height="30"
                 layout="intrinsic"
               />
             </div>
@@ -109,8 +109,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={nodle}
                 alt="nodle"
-                width="220"
-                height="79"
+                width="150"
+                height="50"
                 layout="intrinsic"
               />
             </div>
@@ -121,8 +121,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={kaikaikim}
                 alt="kaikaikim"
-                width="150"
-                height="150"
+                width="80"
+                height="80"
                 layout="fixed"
               />
               <h5 className={classes.descriptionLogo}>KaiKaiKim</h5>
@@ -131,8 +131,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={orientCapital}
                 alt="orientCapital"
-                width="150"
-                height="150"
+                width="80"
+                height="80"
                 layout="fixed"
               />
               <h5 className={classes.descriptionLogo}>Orient Capital</h5>
@@ -141,8 +141,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={seoul}
                 alt="seoul"
-                width="150"
-                height="150"
+                width="80"
+                height="80"
                 layout="fixed"
               />
               <h5 className={classes.descriptionLogo}>Seoul Fortune venture</h5>
@@ -151,8 +151,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={minLab}
                 alt="minLab"
-                width="150"
-                height="150"
+                width="80"
+                height="80"
                 layout="fixed"
               />
               <h5 className={classes.descriptionLogo}>MintLAB</h5>
@@ -161,8 +161,8 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               <Image
                 src={ichiTek}
                 alt="ichiTek"
-                width="150"
-                height="150"
+                width="80"
+                height="80"
                 layout="fixed"
               />
               <h5 className={classes.descriptionLogo}>IchiTek</h5>
@@ -170,10 +170,12 @@ const DefiWay = ({ bgImage, title, isMain }) => {
           </div>
         </div>
       )}
-      <div className={classes.platformWrapper}>
-        <h4 className={classes.platform}>{t("As a user 1")}</h4>
-        <h4 className={classes.platform}>{t("As a user 2")}</h4>
-      </div>
+      {!isMain && (
+        <div className={classes.platformWrapper}>
+          <h4 className={classes.platform}>{t("As a user 1")}</h4>
+          <h4 className={classes.platform}>{t("As a user 2")}</h4>
+        </div>
+      )}
     </>
   );
 };

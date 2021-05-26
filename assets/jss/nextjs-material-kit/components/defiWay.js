@@ -92,6 +92,9 @@ const futureStyle = (theme) => ({
   },
   partnersIcon: {
     padding: "10px 0",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   description: {
     fontFamily: "SF UI Text",
@@ -113,6 +116,7 @@ const futureStyle = (theme) => ({
     margin: "0",
     padding: "5px 0 0",
     textAlign: "center",
+    width: "100%",
   },
   flex: {
     display: "flex",
