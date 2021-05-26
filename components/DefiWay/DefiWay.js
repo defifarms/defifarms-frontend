@@ -97,16 +97,6 @@ const DefiWay = ({ bgImage, title, isMain }) => {
             </div>
             <div className={classes.partnersIcon}>
               <Image
-                className={classes.partnersIcon}
-                src={av}
-                alt="av"
-                width="200"
-                height="30"
-                layout="intrinsic"
-              />
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
                 src={nodle}
                 alt="nodle"
                 width="150"
@@ -117,56 +107,88 @@ const DefiWay = ({ bgImage, title, isMain }) => {
           </div>
           <h5 className={classes.partners}>Strategic Investors</h5>
           <div className={classes.partnersWrapper}>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={kaikaikim}
-                alt="kaikaikim"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
-              <h5 className={classes.descriptionLogo}>KaiKaiKim</h5>
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={orientCapital}
-                alt="orientCapital"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
-              <h5 className={classes.descriptionLogo}>Orient Capital</h5>
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={seoul}
-                alt="seoul"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
-              <h5 className={classes.descriptionLogo}>Seoul Fortune venture</h5>
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={minLab}
-                alt="minLab"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
-              <h5 className={classes.descriptionLogo}>MintLAB</h5>
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={ichiTek}
-                alt="ichiTek"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
-              <h5 className={classes.descriptionLogo}>IchiTek</h5>
-            </div>
+            <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    src={kaikaikim}
+                    alt="kaikaikim"
+                    width="60"
+                    height="60"
+                    layout="fixed"
+                  />
+                  <h5 className={classes.descriptionLogo}>KaiKaiKim</h5>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    src={orientCapital}
+                    alt="orientCapital"
+                    width="60"
+                    height="60"
+                    layout="fixed"
+                  />
+                  <h5 className={classes.descriptionLogo}>Orient Capital</h5>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    src={seoul}
+                    alt="seoul"
+                    width="60"
+                    height="60"
+                    layout="fixed"
+                  />
+                  <h5 className={classes.descriptionLogo}>
+                    Seoul Fortune venture
+                  </h5>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    src={minLab}
+                    alt="minLab"
+                    width="60"
+                    height="60"
+                    layout="fixed"
+                  />
+                  <h5 className={classes.descriptionLogo}>MintLAB</h5>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    src={ichiTek}
+                    alt="ichiTek"
+                    width="60"
+                    height="60"
+                    layout="fixed"
+                  />
+                  <h5 className={classes.descriptionLogo}>IchiTek</h5>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <div className={classes.partnersIcon}>
+                  <Image
+                    className={classes.partnersIcon}
+                    src={av}
+                    alt="av"
+                    width="200"
+                    height="55"
+                    layout="intrinsic"
+                  />
+                  <h5
+                    className={classes.descriptionLogo}
+                    style={{ width: "182px" }}
+                  >
+                    Andromeda Research
+                  </h5>
+                </div>
+              </GridItem>
+            </GridContainer>
           </div>
         </div>
       )}
