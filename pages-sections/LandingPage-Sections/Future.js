@@ -66,7 +66,7 @@ export default function Staking() {
           </GridItem>
         </GridContainer>
       </div>
-      <DefiWay bgImage={sellBg} title={t("Get right here")} />
+      <DefiWay bgImage={sellBg} title={t("Get right here")} isMain />
     </>
   );
 }
