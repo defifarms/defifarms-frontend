@@ -41,6 +41,20 @@ const futureStyle = (theme) => ({
       textAlign: "center",
     },
   },
+  partnersWrapper: {
+    padding: "0 40px",
+    maxWidth: "1240px",
+    margin: "0 auto",
+    width: "100%",
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "space-around",
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 20px",
+      textAlign: "center",
+      display: "grid",
+    },
+  },
   gridItem: {
     padding: "0 20px 0 0",
     [theme.breakpoints.down("sm")]: {
@@ -60,6 +74,24 @@ const futureStyle = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: "50px 0 0",
     },
+  },
+  partners: {
+    fontFamily: "SF UI Text",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "32px",
+    lineHeight: "48px",
+    letterSpacing: "-0.015em",
+    margin: "0",
+    padding: "100px 0",
+    color: "#fff",
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      padding: "50px 0",
+    },
+  },
+  partnersIcon: {
+    padding: "10px 0",
   },
   description: {
     fontFamily: "SF UI Text",
