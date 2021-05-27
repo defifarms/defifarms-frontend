@@ -142,7 +142,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                     layout="fixed"
                   />
                   <h5 className={classes.descriptionLogo}>
-                    Seoul Fortune venture
+                    Seoul Fortune Venture
                   </h5>
                 </div>
               </GridItem>
