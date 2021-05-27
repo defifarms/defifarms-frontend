@@ -20,6 +20,7 @@ import icon4 from "assets/img/icons/telegram.png";
 import icon5 from "assets/img/icons/tweat.png";
 import medium from "assets/img/icons/medium.png";
 import linkedin from "assets/img/icons/linkedin.png";
+import redit from "assets/img/icons/redit.png";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
 
@@ -142,6 +143,18 @@ export default function Footer(props) {
             >
               <img
                 src={icon3}
+                alt="First slide"
+                style={{ width: "50px", height: "100%" }}
+              />
+            </Button>
+            <Button
+              href="https://www.reddit.com/user/DeFiFarmsNFTs"
+              color="transparent"
+              target="_blank"
+              className={classes.btn}
+            >
+              <img
+                src={redit}
                 alt="First slide"
                 style={{ width: "50px", height: "100%" }}
               />
