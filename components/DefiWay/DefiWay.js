@@ -54,7 +54,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 color="transparent"
                 target="_blank"
                 className={classes.btn}
-                href="#"
+                href={roadmap.link}
                 target="_blank"
               >
                 Join {roadmap.title}
