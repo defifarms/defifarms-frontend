@@ -75,7 +75,7 @@ export default function Footer(props) {
         <div className={classes.container}>
           <div>
             <Button
-              href="https://twitter.com/DeFiFarmNFTs"
+              href="https://twitter.com/DeFiFarmsNFTs"
               color="transparent"
               target="_blank"
               className={classes.btn}
@@ -111,7 +111,7 @@ export default function Footer(props) {
               />
             </Button>
             <Button
-              href="#"
+              href="https://medium.com/@DefiFarmsNFTs"
               color="transparent"
               target="_blank"
               className={classes.btn}
