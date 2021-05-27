@@ -12,6 +12,7 @@ export const roadmap = [
     date: "Jun 15, 2021 22:00:00 EST",
     nextDate: "Jun 20, 2021 22:00:00 EST",
     dateTitle: "Jun 15 10:00 PM EST",
+    link: "http://bit.ly/defifarms",
   },
   {
     title: "IDO Sale",
@@ -19,5 +20,6 @@ export const roadmap = [
     date: "Jun 25, 2021 22:00:00 EST",
     nextDate: "Jun 30, 2021 22:00:00 EST",
     dateTitle: "Jun 25 10:00 PM EST",
+    link: "http://bit.ly/defifarms2",
   },
 ];

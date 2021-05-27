@@ -195,11 +195,11 @@ const headerStyle = {
     fontSize: "15px",
     lineHeight: "18px",
     letterSpacing: "-0.015em",
-    color: "#FEA23E",
+    color: "#FEA23E !important",
     margin: 0,
     "&:hover": {
       background: "#FEA23E",
-      color: "#fff",
+      color: "#fff !important",
     },
     "@media (max-width: 960px)": {
       height: "34px",

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import { useTranslation } from "next-i18next";
 
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -14,7 +13,6 @@ const useStyles = makeStyles(styles);
 
 export default function BounceSection() {
   const classes = useStyles();
-  const { t } = useTranslation("common");
   const [roadmap, setRoadmap] = useState({});
   useEffect(() => {
     setRoadmap(getRoadmap());
@@ -28,7 +26,15 @@ export default function BounceSection() {
             {roadmap.title} is opening the whitelisting process
           </h5>
           <h5 className={classes.description}>
-            Go to Register Form to buy DEFIY tokens at {roadmap.title}.
+            Go to{" "}
+            <a
+              className={classes.descriptionLink}
+              href={roadmap.link}
+              target="_blank"
+            >
+              Register Form
+            </a>{" "}
+            to buy DEFIY tokens at {roadmap.title}.
           </h5>
           <h5 className={classes.description}>
             {roadmap.title} is opening the whitelisting process{" "}
@@ -37,9 +43,10 @@ export default function BounceSection() {
           <Clock startTime={roadmap.date} endTime={roadmap.nextDate} />
           <Button
             color="transparent"
-            color="transparent"
             className={classes.btn}
             rel="noopener"
+            href={roadmap.link}
+            target="_blank"
           >
             Join {roadmap.title}
           </Button>

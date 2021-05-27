@@ -64,11 +64,13 @@ const fungibleStyle = (theme) => ({
     fontSize: "24px",
     lineHeight: "32px",
     letterSpacing: "-0.015em",
-    color: "#FEA23E !important",
+    // color: "#FEA23E !important",
+    color: "rgba(255, 255, 255, 0.8) !important",
     margin: "0",
     padding: "0",
     "& :hover, :focus": {
-      color: "#FEA23E",
+      // color: "#FEA23E",
+      color: "rgba(255, 255, 255, 0.8)",
     },
   },
   btn: {
@@ -82,7 +84,7 @@ const fungibleStyle = (theme) => ({
     fontWeight: "600",
     fontSize: "28px",
     lineHeight: "36px",
-    color: "#fff",
+    color: "#fff !important",
 
     transition: "none",
     textTransform: "none",

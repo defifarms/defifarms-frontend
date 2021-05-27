@@ -1,4 +1,4 @@
-import React, { useState, useMemo, FC } from "react";
+import React, { useState, useMemo, FC, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
@@ -20,6 +20,7 @@ import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
+import { getRoadmap } from "helpers/times.js";
 
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
@@ -110,6 +111,10 @@ const LanguageComponent = ({
 
 export default function Header(props) {
   const router = useRouter();
+  const [roadmap, setRoadmap] = useState({});
+  useEffect(() => {
+    setRoadmap(getRoadmap());
+  }, []);
   const localeLanguage =
     languagesData.find((item) => item.id === router.locale) || languagesData[0];
   const [language, setLanguage] = useState(localeLanguage);
@@ -198,6 +203,8 @@ export default function Header(props) {
               color="transparent"
               className={classes.btn}
               rel="noopener"
+              href={roadmap.link}
+              target="_blank"
             >
               {t("buttonHeader")}
             </Button>
@@ -253,6 +260,8 @@ export default function Header(props) {
               color="transparent"
               className={classes.btn}
               rel="noopener"
+              href={roadmap.link}
+              target="_blank"
             >
               {t("buttonHeader")}
             </Button>
