@@ -7,7 +7,7 @@ import styles from "assets/jss/nextjs-material-kit/components/saleOption.js";
 
 const useStyles = makeStyles(styles);
 
-const Round = ({ title, labels, date, nextDate, dateTitle }) => {
+const Round = ({ title, labels, date, nextDate, dateTitle, link }) => {
   const classes = useStyles();
   const { t } = useTranslation("tokenomics");
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -67,6 +67,8 @@ const Round = ({ title, labels, date, nextDate, dateTitle }) => {
         color="transparent"
         className={classes.btn}
         rel="noopener"
+        href={link}
+        target="_blank"
         disabled={timeLeft.status === "Sold Out"}
       >
         {timeLeft.status}

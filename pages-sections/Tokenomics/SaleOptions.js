@@ -126,6 +126,7 @@ const SaleOptions = forwardRef((props, ref) => {
             date={item.date}
             nextDate={item.nextDate}
             dateTitle={item.dateTitle}
+            link={item.link}
           />
         ))}
       </div>
