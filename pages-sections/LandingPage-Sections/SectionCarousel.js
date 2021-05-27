@@ -160,6 +160,7 @@ export default function SectionCarousel({ moveToStaking, moveToLocking }) {
                             color="transparent"
                             target="_blank"
                             className={classes.btn}
+                            onClick={moveToStaking}
                           >
                             DEFIY STAKING
                           </Button>
