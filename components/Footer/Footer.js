@@ -30,8 +30,6 @@ const menu = [
   { route: "/litepaper", name: "Litepaper" },
   { route: "/litepaper", name: "icon" },
   { route: "/tokenomics", name: "Smart Contract" },
-  // { route: "/tokenomics", name: "Audit" },
-  { route: "/tokenomics", name: "Support" },
 ];
 
 const useStyles = makeStyles(styles);
@@ -71,6 +69,13 @@ export default function Footer(props) {
             </ListItem>
           )
         )}
+        <ListItem className={classes.listItem}>
+          <Link href="https://t.me/DefifarmsNFT" target="_blank">
+            <a target="_blank" className={classes.navLink}>
+              Support
+            </a>
+          </Link>
+        </ListItem>
       </List>
       <footer className={footerClasses}>
         <div className={classes.container}>

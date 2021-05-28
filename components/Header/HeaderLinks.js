@@ -16,8 +16,6 @@ const menu = [
   { route: "/tokenomics", name: "Roadmap" },
   { route: "/litepaper", name: "Litepaper" },
   { route: "/tokenomics", name: "Smart Contract" },
-  // { route: "/tokenomics", name: "Audit" },
-  { route: "/tokenomics", name: "Support" },
 ];
 
 export default function HeaderLinks({ onClick }) {
@@ -37,6 +35,13 @@ export default function HeaderLinks({ onClick }) {
           </Link>
         </ListItem>
       ))}
+      <ListItem className={classes.listItem}>
+        <Link href="https://t.me/DefifarmsNFT" target="_blank">
+          <a target="_blank" className={classes.navLink}>
+            Support
+          </a>
+        </Link>
+      </ListItem>
     </List>
   );
 }

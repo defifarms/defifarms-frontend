@@ -189,12 +189,6 @@ const DefiWay = ({ bgImage, title, isMain }) => {
           </div>
         </div>
       )}
-      {!isMain && (
-        <div className={classes.platformWrapper}>
-          <h4 className={classes.platform}>{t("As a user 1")}</h4>
-          <h4 className={classes.platform}>{t("As a user 2")}</h4>
-        </div>
-      )}
     </>
   );
 };
