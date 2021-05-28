@@ -77,16 +77,6 @@ const DefiWay = ({ bgImage, title, isMain }) => {
           <div className={classes.partnersWrapper}>
             <div className={classes.partnersIcon}>
               <Image
-                src={bsc}
-                alt="bsc"
-                width="150"
-                height="50"
-                layout="intrinsic"
-                className={classes.partnersIcon}
-              />
-            </div>
-            <div className={classes.partnersIcon}>
-              <Image
                 src={basic}
                 alt="basic"
                 width="150"

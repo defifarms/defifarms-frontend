@@ -147,7 +147,7 @@ const futureStyle = (theme) => ({
     color: "#FEA23E",
     height: "59px",
     [theme.breakpoints.down("sm")]: {
-      margin: "32px 0 0 16px",
+      margin: "32px 0 0 0",
     },
   },
   platform: {

@@ -34,7 +34,7 @@ const footerStyle = (theme) => ({
     },
   },
   btn: {
-    width: "49px",
+    width: "40px",
     padding: "0",
     margin: "0 8px",
   },

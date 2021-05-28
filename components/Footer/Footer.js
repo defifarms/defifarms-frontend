@@ -86,11 +86,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={icon5}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={icon5} alt="First slide" />
             </Button>
             <Button
               href="https://t.me/DefifarmsNFT"
@@ -98,11 +94,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={icon4}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={icon4} alt="First slide" />
             </Button>
             <Button
               href="https://www.linkedin.com/company/defifarms-inc"
@@ -110,11 +102,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={linkedin}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={linkedin} alt="First slide" />
             </Button>
             <Button
               href="https://medium.com/@DefiFarmsNFTs"
@@ -122,11 +110,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={medium}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={medium} alt="First slide" />
             </Button>
             <Button
               href="https://github.com/defifarms"
@@ -134,11 +118,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={icon2}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={icon2} alt="First slide" />
             </Button>
             <Button
               href="#"
@@ -146,11 +126,7 @@ export default function Footer(props) {
               target="_blank"
               className={classes.btn}
             >
-              <img
-                src={icon3}
-                alt="First slide"
-                style={{ width: "50px", height: "100%" }}
-              />
+              <img src={icon3} alt="First slide" />
             </Button>
             <Button
               href="https://www.reddit.com/user/DeFiFarmsNFTs"
@@ -161,7 +137,7 @@ export default function Footer(props) {
               <img
                 src={redit}
                 alt="First slide"
-                style={{ width: "50px", height: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </Button>
           </div>
