@@ -44,8 +44,8 @@ const tokenomicsStyles = (theme) => ({
     boxSizing: "border-box",
     borderRadius: "8px",
     maxWidth: "956px",
-    height: "119px",
-    padding: "32px 0 25px",
+    minHeight: "119px",
+    padding: "32px 10px 25px",
     textAlign: "center",
     margin: "0 auto",
     [theme.breakpoints.down("sm")]: {
@@ -74,9 +74,9 @@ const tokenomicsStyles = (theme) => ({
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: "32px",
-    lineHeight: "18px",
     color: "#fea23e",
     wordBreak: "break-all",
+    lineHeight: "40px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "20px",
       lineHeight: "22px",

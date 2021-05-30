@@ -68,7 +68,9 @@ const labels = [
 const tokens = [
   {
     name: "DEFIY Token Contract",
-    value: "0xCED087Fb23dAe8aABeD151EEd94035992caA3981",
+    link: true,
+    value:
+      "https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981",
   },
   {
     name: "Reward Pool",
@@ -154,7 +156,17 @@ const SaleOptions = forwardRef((props, ref) => {
               <p key={item.name} className={classes.tokenName}>
                 {item.name}
               </p>
-              <p className={classes.tokenvalue}>{item.value}</p>
+              {item.link ? (
+                <a
+                  href={item.value}
+                  target="_blank"
+                  className={classes.tokenvalue}
+                >
+                  {item.value}
+                </a>
+              ) : (
+                <p className={classes.tokenvalue}>{item.value}</p>
+              )}
             </div>
           ))}
         </div>

@@ -44,9 +44,13 @@ const Tokenomics = () => {
       <h5 className={classes.title}>Tokenomics</h5>
       <div className={classes.tokenWrapper}>
         <h5 className={classes.token}>{t("Token Contract")}</h5>
-        <h5 className={classes.tokenValue}>
-          0xCED087Fb23dAe8aABeD151EEd94035992caA3981
-        </h5>
+        <a
+          className={classes.tokenValue}
+          href="https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981"
+          target="_blank"
+        >
+          https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981
+        </a>
       </div>
       <div className={classes.tokenomicsItem}>
         <TokenomicsItem tokenomics={tokenomicsLeft} translate />
