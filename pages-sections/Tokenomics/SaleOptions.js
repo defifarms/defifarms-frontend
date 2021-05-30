@@ -68,8 +68,8 @@ const labels = [
 const tokens = [
   {
     name: "DEFIY Token Contract",
-    value: "0xCED087Fb23dAe8aABeD151EEd94035992caA3981",
-    link: "https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981",
+    value: "0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847",
+    link: "https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847",
   },
   {
     name: "Reward Pool",

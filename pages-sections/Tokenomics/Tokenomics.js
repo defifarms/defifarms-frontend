@@ -46,10 +46,10 @@ const Tokenomics = () => {
         <h5 className={classes.token}>{t("Token Contract")}</h5>
         <a
           className={classes.tokenValue}
-          href="https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981"
+          href="https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
           target="_blank"
         >
-          0xCED087Fb23dAe8aABeD151EEd94035992caA3981
+          0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847
         </a>
       </div>
       <div className={classes.tokenomicsItem}>
