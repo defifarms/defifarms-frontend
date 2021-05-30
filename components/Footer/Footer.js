@@ -121,7 +121,7 @@ export default function Footer(props) {
               <img src={icon2} alt="First slide" />
             </Button>
             <Button
-              href="https://bscscan.com/address/0xCED087Fb23dAe8aABeD151EEd94035992caA3981"
+              href="https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981"
               color="transparent"
               target="_blank"
               className={classes.btn}
