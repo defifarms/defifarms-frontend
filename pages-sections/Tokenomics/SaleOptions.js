@@ -112,8 +112,14 @@ const SaleOptions = forwardRef((props, ref) => {
         <Hidden smDown>
           <Labels labels={labels} />
         </Hidden>
-        {rounds.map((item) => (
-          <Option key={item.title} title={item.title} options={item.options} />
+        {rounds.map((item, index) => (
+          <Option
+            key={item.title}
+            title={item.title}
+            options={item.options}
+            nextDate={roadmap[index].nextDate}
+            date={roadmap[index].date}
+          />
         ))}
       </div>
       <p className={classes.note}>{t("Supplies and sale")}</p>

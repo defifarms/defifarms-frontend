@@ -9,6 +9,24 @@ const saleOptionStyles = (theme) => ({
     padding: "0 10px",
     minHeight: "110px",
   },
+  gray: {
+    background: "gray",
+    boxSizing: "border-box",
+    borderRadius: "8px",
+    width: "272px",
+    padding: "0 30px",
+    margin: "0 25px",
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      borderRadius: "0",
+      borderLeft: "none",
+      borderRight: "none",
+      width: "100%",
+      margin: "0",
+      padding: "0 20px",
+      flexWrap: "wrap",
+    },
+  },
   options: {
     background:
       "linear-gradient(140.54deg, rgba(38, 1, 117, 0.3) 7.31%, rgba(51, 34, 243, 0.3) 99.53%)",
