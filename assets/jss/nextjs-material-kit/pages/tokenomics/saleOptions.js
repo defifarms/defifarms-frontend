@@ -128,7 +128,7 @@ const saleOptionsStyles = (theme) => ({
     color: "#fff",
   },
   tokenvalue: {
-    padding: "0 34px",
+    padding: "0",
     wordBreak: "break-all",
     fontFamily: "Montserrat",
     fontStyle: "normal",

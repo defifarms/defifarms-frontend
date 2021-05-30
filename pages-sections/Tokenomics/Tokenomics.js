@@ -49,7 +49,7 @@ const Tokenomics = () => {
           href="https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981"
           target="_blank"
         >
-          https://bscscan.com/token/0xCED087Fb23dAe8aABeD151EEd94035992caA3981
+          0xCED087Fb23dAe8aABeD151EEd94035992caA3981
         </a>
       </div>
       <div className={classes.tokenomicsItem}>
