@@ -10,7 +10,7 @@ const saleOptionStyles = (theme) => ({
     minHeight: "110px",
   },
   gray: {
-    background: "gray",
+    background: "#979797",
     boxSizing: "border-box",
     borderRadius: "8px",
     width: "272px",
