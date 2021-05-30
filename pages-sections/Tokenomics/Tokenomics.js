@@ -38,13 +38,15 @@ const useStyles = makeStyles(styles);
 const Tokenomics = () => {
   const classes = useStyles();
   const { t } = useTranslation("tokenomics");
-  const token = "{TBA}";
+
   return (
     <div className={classes.wrapper}>
       <h5 className={classes.title}>Tokenomics</h5>
       <div className={classes.tokenWrapper}>
         <h5 className={classes.token}>{t("Token Contract")}</h5>
-        <h5 className={classes.tokenValue}>{token}</h5>
+        <h5 className={classes.tokenValue}>
+          0xCED087Fb23dAe8aABeD151EEd94035992caA3981
+        </h5>
       </div>
       <div className={classes.tokenomicsItem}>
         <TokenomicsItem tokenomics={tokenomicsLeft} translate />

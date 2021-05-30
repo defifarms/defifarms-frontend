@@ -68,7 +68,7 @@ const labels = [
 const tokens = [
   {
     name: "DEFIY Token Contract",
-    value: "{TBA}",
+    value: "0xCED087Fb23dAe8aABeD151EEd94035992caA3981",
   },
   {
     name: "Reward Pool",
