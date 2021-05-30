@@ -14,7 +14,7 @@ const headerLinksStyle = (theme) => ({
   listItem: {
     float: "left",
     color: "inherit",
-    position: "relative",
+    // position: "relative",
     display: "block",
     width: "auto",
     margin: "0",
@@ -25,7 +25,7 @@ const headerLinksStyle = (theme) => ({
   },
   navLink: {
     color: "#ededed",
-    position: "relative",
+    cursor: "pointer",
     padding: "12px",
     fontWeight: "600",
     fontSize: "18px",
@@ -84,7 +84,7 @@ const headerLinksStyle = (theme) => ({
       margin: "5px 15px",
     },
     top: "3px",
-    position: "relative",
+    //position: "relative",
     fontWeight: "400",
     fontSize: "12px",
     textTransform: "uppercase",
@@ -96,6 +96,32 @@ const headerLinksStyle = (theme) => ({
   navLinkActive: {
     color: "inherit",
     backgroundColor: "rgba(255, 255, 255, 0.1)",
+  },
+  subMenu: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "row",
+    height: "64px",
+    margin: "0px",
+    padding: "0px",
+    position: "absolute",
+    left: "212px",
+    top: "64px",
+    background: "#281da9",
+  },
+  toggleIcon: {
+    width: "0",
+    height: "0",
+    display: "inline-block",
+    borderTop: "4px solid",
+    transition: "all 150ms ease-in",
+    borderLeft: "4px solid transparent",
+    marginLeft: "4px",
+    borderRight: "4px solid transparent",
+    verticalAlign: "middle",
+  },
+  caretActive: {
+    transform: "rotate(180deg)",
   },
 });
 

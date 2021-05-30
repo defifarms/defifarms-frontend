@@ -12,7 +12,7 @@ import {
   boxShadow,
 } from "assets/jss/nextjs-material-kit.js";
 
-const headerStyle = {
+const headerStyle = (theme) => ({
   appBar: {
     display: "flex",
     border: "0",
@@ -28,7 +28,7 @@ const headerStyle = {
     alignItems: "center",
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
-    position: "relative",
+    //position: "relative",
     zIndex: "unset",
     "@media (max-width: 960px)": {
       padding: "3px 0",
@@ -153,9 +153,8 @@ const headerStyle = {
   },
   white: {
     border: "0",
-    padding: "0.625rem 0",
+    padding: "0.925rem 0",
     marginBottom: "20px",
-    //color: "#555",
     backgroundColor: "#281da9 !important",
     boxShadow:
       "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
@@ -253,6 +252,41 @@ const headerStyle = {
     justifyContent: "space-between",
     paddingLeft: "20px",
   },
-};
+  subMenu: {
+    position: "fixed",
+    width: "100%",
+    top: "72px",
+    zIndex: "10",
+    height: "72px",
+    background: "#281da9",
+    display: "flex",
+    padding: "20px 0 20px 20%",
+    marginTop: "10px",
+    transition: "all 150ms ease-in",
+  },
+  navLink: {
+    color: "#ededed",
+    //position: "relative",
+    padding: "12px",
+    fontWeight: "600",
+    fontSize: "18px",
+    fontFamily: "SF UI Text",
+    textTransform: "none",
+    borderRadius: "3px",
+    lineHeight: "21px",
+    letterSpacing: "-0.015em",
+    textDecoration: "none",
+    fontWeight: "600",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover,&:focus": {
+      fontWeight: "700",
+      color: "#fff",
+      [theme.breakpoints.down("sm")]: {
+        color: "#3038bd",
+      },
+    },
+  },
+});
 
 export default headerStyle;
