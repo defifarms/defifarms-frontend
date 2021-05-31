@@ -19,6 +19,7 @@ const footerStyle = (theme) => ({
     },
   },
   wrapperImg: {
+    position: "relative",
     display: "flex",
     background: "#16035B",
     justifyContent: "center",
@@ -61,6 +62,7 @@ const footerStyle = (theme) => ({
     background: "#1e0072",
   },
   navLink: {
+    cursor: "pointer",
     color: "inherit",
     position: "relative",
     padding: "12px",
@@ -103,6 +105,36 @@ const footerStyle = (theme) => ({
       width: "40px",
       height: "40px",
     },
+  },
+  submenu: {
+    position: "absolute",
+    zIndex: "1",
+    top: "-10px",
+    color: "#CFCFCF",
+    [theme.breakpoints.down("sm")]: {
+      position: "inherit",
+      display: "flex",
+      flexWrap: "wrap",
+    },
+  },
+  toggleIcon: {
+    width: "0",
+    height: "0",
+    display: "inline-block",
+    borderTop: "4px solid",
+    transition: "all 150ms ease-in",
+    borderLeft: "4px solid transparent",
+    marginLeft: "4px",
+    borderRight: "4px solid transparent",
+    verticalAlign: "middle",
+  },
+  subItem: {
+    [theme.breakpoints.down("sm")]: {
+      width: "calc(50% - 15px)",
+    },
+  },
+  caretActive: {
+    transform: "rotate(180deg)",
   },
 });
 

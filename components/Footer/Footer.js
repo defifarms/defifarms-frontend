@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 // nodejs library to set properties for components
@@ -23,11 +23,33 @@ import linkedin from "assets/img/icons/linkedin.png";
 import redit from "assets/img/icons/redit.png";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
+const dropdown = [
+  {
+    name: "Litepaper",
+    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdf",
+  },
+  {
+    name: "One pager",
+    href: "https://github.com/defifarms/brand_assets/blob/main/One%20Pager.pdf",
+  },
+  {
+    name: "Infographics",
+    href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
+  },
+  {
+    name: "Tokenomics",
+    href: "https://github.com/defifarms/brand_assets/blob/main/Tokenomics.pdf",
+  },
+  {
+    name: "Whitepaper",
+    href: "https://github.com/defifarms/brand_assets/blob/main/Defifarms%20Whitepaper.pdf",
+  },
+];
 
 const menu = [
   { route: "/tokenomics", name: "Tokenomics" },
   { route: "/tokenomics", name: "Roadmap" },
-  { route: "/litepaper", name: "Litepaper" },
+  { route: "/litepaper", name: "Whitepaper" },
   { route: "/litepaper", name: "icon" },
   { route: "/tokenomics", name: "Smart Contract" },
 ];
@@ -37,13 +59,62 @@ export default function Footer(props) {
   const { t } = useTranslation("common");
   const classes = useStyles();
   const { whiteFont } = props;
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
   const footerClasses = classNames({
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont,
   });
 
+  const caretClasses = classNames({
+    [classes.toggleIcon]: true,
+    [classes.caretActive]: Boolean(anchorEl),
+  });
+  const subItemClasses = classNames({
+    [classes.subItem]: true,
+    [classes.navLink]: true,
+  });
+
+  const onToggleMenu = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
+  const handleClick = (event) => {
+    setToggleMenu(!toggleMenu);
+    if (anchorEl && anchorEl.contains(event.target)) {
+      setAnchorEl(null);
+    } else {
+      setAnchorEl(event.currentTarget);
+    }
+  };
+
+  const closeMenu = () => {
+    setAnchorEl(null);
+    setToggleMenu(false);
+  };
+
   return (
     <div className={classes.wrapperImg}>
+      {toggleMenu && (
+        <div className={classes.submenu}>
+          {dropdown.map((item) => (
+            <Link href={item.href} key={item.name}>
+              <a target="_blank" className={subItemClasses}>
+                {item.name}
+              </a>
+            </Link>
+          ))}
+          <Link
+            href="https://bscscan.com/address/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
+            target="_blank"
+          >
+            <a target="_blank" className={subItemClasses}>
+              dApp Roadmap
+            </a>
+          </Link>
+        </div>
+      )}
       <Hidden smUp implementation="js">
         <Link href="/">
           <a>
@@ -61,6 +132,18 @@ export default function Footer(props) {
                 </a>
               </Link>
             </Hidden>
+          ) : item.name === "Whitepaper" ? (
+            <ListItem className={classes.listItem} onClick={handleClick}>
+              <p
+                className={classes.navLink}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                Whitepaper <span className={caretClasses} />
+              </p>
+            </ListItem>
           ) : (
             <ListItem className={classes.listItem} key={item.name}>
               <Link href={{ pathname: item.route, query: { q: item.name } }}>

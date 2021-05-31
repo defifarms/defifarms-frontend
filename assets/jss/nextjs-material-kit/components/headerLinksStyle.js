@@ -62,6 +62,45 @@ const headerLinksStyle = (theme) => ({
       },
     },
   },
+  navLink1: {
+    color: "#ededed",
+    cursor: "pointer",
+    padding: "12px",
+    fontWeight: "600",
+    fontSize: "18px",
+    fontFamily: "SF UI Text",
+    textTransform: "none",
+    borderRadius: "3px",
+    lineHeight: "21px",
+    letterSpacing: "-0.015em",
+    textDecoration: "none",
+    fontWeight: "600",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover,&:focus": {
+      fontWeight: "700",
+      color: "#fff",
+      [theme.breakpoints.down("sm")]: {
+        color: "#3038bd",
+      },
+    },
+    [theme.breakpoints.down("md")]: {
+      padding: "12px 10px",
+      lineHeight: "20px",
+      fontSize: "16px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "calc(50% - 30px)",
+      marginLeft: "15px",
+      marginBottom: "8px",
+      marginTop: "8px",
+      textAlign: "left",
+      color: "#3038BD",
+      "& > span:first-child": {
+        justifyContent: "flex-start",
+      },
+    },
+  },
   notificationNavLink: {
     [theme.breakpoints.down("md")]: {
       top: "0",
@@ -122,6 +161,13 @@ const headerLinksStyle = (theme) => ({
   },
   caretActive: {
     transform: "rotate(180deg)",
+  },
+  none: {
+    display: "none",
+  },
+  flex: {
+    display: "flex",
+    flexWrap: "wrap",
   },
 });
 

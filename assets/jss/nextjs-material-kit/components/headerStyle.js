@@ -287,6 +287,12 @@ const headerStyle = (theme) => ({
       },
     },
   },
+  none: {
+    display: "none",
+  },
+  flex: {
+    display: "flex",
+  },
 });
 
 export default headerStyle;

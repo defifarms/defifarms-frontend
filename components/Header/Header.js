@@ -18,27 +18,36 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import { getRoadmap } from "helpers/times.js";
 
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
 import logo from "assets/img/icons/logo.png";
-import en from "assets/img/icons/en.png";
-import vn from "assets/img/icons/vn.png";
-import jp from "assets/img/icons/jp.png";
-import china from "assets/img/icons/china.png";
-import korea from "assets/img/icons/korea.png";
 
 const useStyles = makeStyles(styles);
 
 const dropdown = [
-  "Litepaper",
-  "One pager",
-  "Infographics",
-  "Tokenomics",
-  "Whitepaper",
+  {
+    name: "Litepaper",
+    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdf",
+  },
+  {
+    name: "One pager",
+    href: "https://github.com/defifarms/brand_assets/blob/main/One%20Pager.pdf",
+  },
+  {
+    name: "Infographics",
+    href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
+  },
+  {
+    name: "Tokenomics",
+    href: "https://github.com/defifarms/brand_assets/blob/main/Tokenomics.pdf",
+  },
+  {
+    name: "Whitepaper",
+    href: "https://github.com/defifarms/brand_assets/blob/main/Defifarms%20Whitepaper.pdf",
+  },
 ];
 
 export default function Header(props) {
@@ -96,7 +105,11 @@ export default function Header(props) {
   };
 
   const closeMenu = () => {
-    setToggleMenu(false);
+    !mobileOpen && setToggleMenu(false);
+  };
+
+  const handelToggleMenu = () => {
+    setToggleMenu(!toggleMenu);
   };
   return (
     <>
@@ -172,7 +185,11 @@ export default function Header(props) {
                   </IconButton>
                 </div>
               </div>
-              <HeaderLinks onClick={handleDrawerToggle} />
+              <HeaderLinks
+                onClick={handleDrawerToggle}
+                toggleMenu={handelToggleMenu}
+                istoggleMenu={toggleMenu}
+              />
               <Button
                 color="transparent"
                 color="transparent"
@@ -190,8 +207,10 @@ export default function Header(props) {
       {toggleMenu && (
         <div className={classes.subMenu}>
           {dropdown.map((item) => (
-            <Link href="#" key={item}>
-              <a className={classes.navLink}>{item}</a>
+            <Link href={item.href} key={item.name}>
+              <a target="_blank" className={classes.navLink}>
+                {item.name}
+              </a>
             </Link>
           ))}
           <Link
