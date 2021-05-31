@@ -10,7 +10,7 @@ import classNames from "classnames";
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "next-i18next";
-
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Button from "components/CustomButtons/Button.js";
 import Hidden from "@material-ui/core/Hidden";
 import logo from "assets/img/icons/logo.png";
@@ -95,142 +95,148 @@ export default function Footer(props) {
   };
 
   return (
-    <div className={classes.wrapperImg}>
-      {toggleMenu && (
-        <div className={classes.submenu}>
-          {dropdown.map((item) => (
-            <Link href={item.href} key={item.name}>
-              <a target="_blank" className={subItemClasses}>
-                {item.name}
-              </a>
-            </Link>
-          ))}
-          <Link
-            href="https://bscscan.com/address/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
-            target="_blank"
-          >
-            <a target="_blank" className={subItemClasses}>
-              dApp Roadmap
-            </a>
-          </Link>
-        </div>
-      )}
-      <Hidden smUp implementation="js">
-        <Link href="/">
-          <a>
-            <img src={logo} alt="DefiFarms" className={classes.logo} />
-          </a>
-        </Link>
-      </Hidden>
-      <List className={classes.wrapper}>
-        {menu.map((item) =>
-          item.name === "icon" ? (
-            <Hidden key={item} smDown implementation="css" key={item.name}>
-              <Link href="/">
-                <a>
-                  <img src={logo} alt="DefiFarms" className={classes.logo} />
+    <ClickAwayListener onClickAway={closeMenu}>
+      <div className={classes.wrapperImg}>
+        {toggleMenu && (
+          <div className={classes.submenu}>
+            {dropdown.map((item) => (
+              <Link href={item.href} key={item.name}>
+                <a
+                  onClick={closeMenu}
+                  target="_blank"
+                  className={subItemClasses}
+                >
+                  {item.name}
                 </a>
               </Link>
-            </Hidden>
-          ) : item.name === "Whitepaper" ? (
-            <ListItem className={classes.listItem} onClick={handleClick}>
-              <p
-                className={classes.navLink}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                Whitepaper <span className={caretClasses} />
-              </p>
-            </ListItem>
-          ) : (
-            <ListItem className={classes.listItem} key={item.name}>
-              <Link href={{ pathname: item.route, query: { q: item.name } }}>
-                <a className={classes.navLink}>{t(`${item.name}`)}</a>
-              </Link>
-            </ListItem>
-          )
+            ))}
+            <Link
+              href="https://bscscan.com/address/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
+              target="_blank"
+            >
+              <a onClick={closeMenu} target="_blank" className={subItemClasses}>
+                dApp Roadmap
+              </a>
+            </Link>
+          </div>
         )}
-        <ListItem className={classes.listItem}>
-          <Link href="https://t.me/DefifarmsNFT" target="_blank">
-            <a target="_blank" className={classes.navLink}>
-              Support
+        <Hidden smUp implementation="js">
+          <Link href="/">
+            <a>
+              <img src={logo} alt="DefiFarms" className={classes.logo} />
             </a>
           </Link>
-        </ListItem>
-      </List>
-      <footer className={footerClasses}>
-        <div className={classes.container}>
-          <div>
-            <Button
-              href="https://twitter.com/DeFiFarmsNFTs"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={icon5} alt="First slide" />
-            </Button>
-            <Button
-              href="https://t.me/DefifarmsNFT"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={icon4} alt="First slide" />
-            </Button>
-            <Button
-              href="https://www.linkedin.com/company/defifarms-inc"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={linkedin} alt="First slide" />
-            </Button>
-            <Button
-              href="https://medium.com/@DefiFarmsNFTs"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={medium} alt="First slide" />
-            </Button>
-            <Button
-              href="https://github.com/defifarms"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={icon2} alt="First slide" />
-            </Button>
-            <Button
-              href="https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img src={icon3} alt="First slide" />
-            </Button>
-            <Button
-              href="https://www.reddit.com/user/DeFiFarmsNFTs"
-              color="transparent"
-              target="_blank"
-              className={classes.btn}
-            >
-              <img
-                src={redit}
-                alt="First slide"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </Button>
+        </Hidden>
+        <List className={classes.wrapper}>
+          {menu.map((item) =>
+            item.name === "icon" ? (
+              <Hidden key={item} smDown implementation="css" key={item.name}>
+                <Link href="/">
+                  <a>
+                    <img src={logo} alt="DefiFarms" className={classes.logo} />
+                  </a>
+                </Link>
+              </Hidden>
+            ) : item.name === "Whitepaper" ? (
+              <ListItem className={classes.listItem} onClick={handleClick}>
+                <p
+                  className={classes.navLink}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  Whitepaper <span className={caretClasses} />
+                </p>
+              </ListItem>
+            ) : (
+              <ListItem className={classes.listItem} key={item.name}>
+                <Link href={{ pathname: item.route, query: { q: item.name } }}>
+                  <a className={classes.navLink}>{t(`${item.name}`)}</a>
+                </Link>
+              </ListItem>
+            )
+          )}
+          <ListItem className={classes.listItem}>
+            <Link href="https://t.me/DefifarmsNFT" target="_blank">
+              <a target="_blank" className={classes.navLink}>
+                Support
+              </a>
+            </Link>
+          </ListItem>
+        </List>
+        <footer className={footerClasses}>
+          <div className={classes.container}>
+            <div>
+              <Button
+                href="https://twitter.com/DeFiFarmsNFTs"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={icon5} alt="First slide" />
+              </Button>
+              <Button
+                href="https://t.me/DefifarmsNFT"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={icon4} alt="First slide" />
+              </Button>
+              <Button
+                href="https://www.linkedin.com/company/defifarms-inc"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={linkedin} alt="First slide" />
+              </Button>
+              <Button
+                href="https://medium.com/@DefiFarmsNFTs"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={medium} alt="First slide" />
+              </Button>
+              <Button
+                href="https://github.com/defifarms"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={icon2} alt="First slide" />
+              </Button>
+              <Button
+                href="https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img src={icon3} alt="First slide" />
+              </Button>
+              <Button
+                href="https://www.reddit.com/user/DeFiFarmsNFTs"
+                color="transparent"
+                target="_blank"
+                className={classes.btn}
+              >
+                <img
+                  src={redit}
+                  alt="First slide"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </Button>
+            </div>
+            <div className={classes.text}>
+              DefiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
+              | Powered by Binance Smart Chain
+            </div>
           </div>
-          <div className={classes.text}>
-            DefiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved |
-            Powered by Binance Smart Chain
-          </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </ClickAwayListener>
   );
 }
 
