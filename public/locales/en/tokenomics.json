@@ -41,7 +41,7 @@
   "Seed Dates": "May 24-25, 2021",
   "Seed Lockup": "12 months: Unlock 5% before listing",
   "Seed Release": "2 months cliff, then linear till the 12th month",
-  "Seed Purchase": "$100 min $500 max*",
+  "Seed Purchase": "$1,000 min $20,000 max*",
   "Seed Supply": "8%*",
   "Seed Tokens": "8,000,000",
   "Seed Price": "$0.02",
@@ -76,5 +76,5 @@
   "Sold Out": "Sold Out",
   "Smart Contracts": "Smart Contracts",
   "Smart Contracts Desc": "All the smart contracts have been deployed on Binance Smart Chain Mainnet. Here are links to each one of them for your review. Not a single line of code has been changed, therefore the security audits that have been performed are still valid. We may opt to have new audits performed as well to confirm they are as good as we believe them to be",
-  "DNFY is the way": "DNFY is the way. Get you some right here."
+  "DNFY is the way": "DEFIY is the way. Get you some right here."
 }
