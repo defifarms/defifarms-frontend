@@ -48,6 +48,10 @@ const dropdown = [
     name: "Whitepaper",
     href: "https://github.com/defifarms/brand_assets/blob/main/Defifarms%20Whitepaper.pdf",
   },
+  {
+    href: "https://github.com/defifarms/brand_assets/blob/main/dApp%20Roadmap.pdf",
+    name: "dApp Roadmap",
+  },
 ];
 
 export default function Header(props) {
@@ -213,14 +217,6 @@ export default function Header(props) {
               </a>
             </Link>
           ))}
-          <Link
-            href="https://bscscan.com/address/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
-            target="_blank"
-          >
-            <a target="_blank" className={classes.navLink}>
-              dApp Roadmap
-            </a>
-          </Link>
         </div>
       )}
     </>
