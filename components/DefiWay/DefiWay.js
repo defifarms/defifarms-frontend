@@ -177,6 +177,27 @@ const DefiWay = ({ bgImage, title, isMain }) => {
               </GridItem>
             </GridContainer>
           </div>
+          <h5 className={classes.partners}>Featured In</h5>
+          <div className={classes.partnersWrapper}>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                className={classes.descriptionLink}
+                href="https://www.einnews.com/pr_news/542577199/defifarms-is-using-the-power-of-nft-s-to-revolutionize-the-decentralized-finance-world"
+              >
+                EIN News
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                className={classes.descriptionLink}
+                href="https://techtodaynewspaper.com/defifarms-is-using-the-power-of-nfts-to-revolutionize-the-decentralized-finance-world/"
+              >
+                Techtoday Newspaper
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </>

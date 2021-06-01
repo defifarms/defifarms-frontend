@@ -172,6 +172,22 @@ const futureStyle = (theme) => ({
       textAlign: "center",
     },
   },
+  descriptionLink: {
+    fontFamily: "SF UI Text",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "22px",
+    lineHeight: "27px",
+    color: "#fff",
+    margin: "0",
+    padding: "5px 0 0",
+    textAlign: "center",
+    width: "100%",
+    textDecoration: "underline",
+    "&:hover": {
+      color: "#fff",
+    },
+  },
 });
 
 export default futureStyle;
