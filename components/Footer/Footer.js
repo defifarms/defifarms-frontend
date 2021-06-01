@@ -154,7 +154,7 @@ export default function Footer(props) {
             )
           )}
           <ListItem className={classes.listItem}>
-            <Link href="https://t.me/DefifarmsNFT" target="_blank">
+            <Link href="mailto:contact@defifarms.org" target="_blank">
               <a target="_blank" className={classes.navLink}>
                 Support
               </a>
@@ -227,7 +227,7 @@ export default function Footer(props) {
             </div>
             <div className={classes.text}>
               DefiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
-              | Powered by Binance Smart Chain
+              | Power by <span className={classes.icon} /> Binance Smart Chain
             </div>
           </div>
         </footer>

@@ -1,4 +1,5 @@
-import { container, primaryColor } from "assets/jss/nextjs-material-kit.js";
+import { primaryColor } from "assets/jss/nextjs-material-kit.js";
+import image from "assets/img/bnc.svg";
 
 const footerStyle = (theme) => ({
   wrapper: {
@@ -41,6 +42,10 @@ const footerStyle = (theme) => ({
   },
   text: {
     paddingTop: "24px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
   footer: {
     background: "#1e0072",
@@ -135,6 +140,14 @@ const footerStyle = (theme) => ({
   },
   caretActive: {
     transform: "rotate(180deg)",
+  },
+  icon: {
+    backgroundImage: "url(" + image + ")",
+    backgroundSize: "cover",
+    width: "110px",
+    height: "26px",
+    display: "inline-block",
+    margin: "0 5px",
   },
 });
 

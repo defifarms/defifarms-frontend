@@ -25,7 +25,9 @@ export default function ProductSection() {
       }}
     >
       <h5 className={classes.description}>{t("Section 2")}</h5>
-      <h5 className={classes.description}>{t("Section 2.1")}</h5>
+      <h5 className={classes.description}>
+        Power by <span className={classes.icon} /> Binance Smart Chain
+      </h5>
       <Button
         color="transparent"
         color="transparent"

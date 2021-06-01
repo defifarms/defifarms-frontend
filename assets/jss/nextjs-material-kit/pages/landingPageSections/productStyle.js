@@ -1,3 +1,5 @@
+import image from "assets/img/bnc.svg";
+
 const productStyle = (theme) => ({
   description: {
     fontFamily: "SF UI Text",
@@ -10,6 +12,10 @@ const productStyle = (theme) => ({
     margin: "0 auto",
     padding: "0",
     maxWidth: "1200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap",
     [theme.breakpoints.down("md")]: {
       fontSize: "28px",
       maxWidth: "1000px",
@@ -57,6 +63,14 @@ const productStyle = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       margin: "32",
     },
+  },
+  icon: {
+    backgroundImage: "url(" + image + ")",
+    backgroundSize: "cover",
+    width: "110px",
+    height: "26px",
+    display: "inline-block",
+    margin: "0 5px",
   },
 });
 

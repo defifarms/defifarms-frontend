@@ -125,7 +125,7 @@ export default function HeaderLinks({
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link href="https://t.me/DefifarmsNFT" target="_blank">
+          <Link href="mailto:contact@defifarms.org" target="_blank">
             <a target="_blank" className={classes.navLink}>
               Support
             </a>

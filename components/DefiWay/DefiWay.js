@@ -63,7 +63,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
                 color="transparent"
                 target="_blank"
                 className={classes.btnContact}
-                href="https://t.me/DefifarmsNFT"
+                href="mailto:contact@defifarms.org"
               >
                 {t("Contact us")}
               </Button>
