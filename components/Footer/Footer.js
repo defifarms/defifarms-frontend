@@ -26,11 +26,11 @@ import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
 const dropdown = [
   {
     name: "Litepaper",
-    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdf",
+    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdfhttps://drive.google.com/file/d/1l_jlB_25GLN7_trv42A_7CB6bcG3ko80/view?usp=sharing",
   },
   {
     name: "One pager",
-    href: "https://github.com/defifarms/brand_assets/blob/main/One%20Pager.pdf",
+    href: "https://drive.google.com/file/d/1e-N5mEPfdEJO-Q76LZZIhEVOqC1wyKyJ/view?usp=sharing",
   },
   {
     name: "Infographics",
@@ -42,7 +42,7 @@ const dropdown = [
   },
   {
     name: "Whitepaper",
-    href: "https://github.com/defifarms/brand_assets/blob/main/Defifarms%20Whitepaper.pdf",
+    href: "https://drive.google.com/file/d/16rlbSp4cd_RpGDuPp7VPBpKeGTJ8_yYb/view?usp=sharing",
   },
   {
     href: "https://github.com/defifarms/brand_assets/blob/main/dApp%20Roadmap.pdf",

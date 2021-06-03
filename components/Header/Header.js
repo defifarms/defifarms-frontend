@@ -1,7 +1,6 @@
-import React, { useState, useMemo, FC, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -30,11 +29,11 @@ const useStyles = makeStyles(styles);
 const dropdown = [
   {
     name: "Litepaper",
-    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdf",
+    href: "https://drive.google.com/file/d/1l_jlB_25GLN7_trv42A_7CB6bcG3ko80/view?usp=sharing",
   },
   {
     name: "One pager",
-    href: "https://github.com/defifarms/brand_assets/blob/main/One%20Pager.pdf",
+    href: "https://drive.google.com/file/d/1e-N5mEPfdEJO-Q76LZZIhEVOqC1wyKyJ/view?usp=sharing",
   },
   {
     name: "Infographics",
@@ -46,7 +45,7 @@ const dropdown = [
   },
   {
     name: "Whitepaper",
-    href: "https://github.com/defifarms/brand_assets/blob/main/Defifarms%20Whitepaper.pdf",
+    href: "https://drive.google.com/file/d/16rlbSp4cd_RpGDuPp7VPBpKeGTJ8_yYb/view?usp=sharing",
   },
   {
     href: "https://github.com/defifarms/brand_assets/blob/main/dApp%20Roadmap.pdf",
