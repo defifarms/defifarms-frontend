@@ -21,7 +21,7 @@ jobs:
       #     target: "/var/www/mywebsite"
 
       - name: Executing remote command
-        uses: appleboy/ssh-action@develop
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
