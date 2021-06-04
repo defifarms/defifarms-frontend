@@ -19,8 +19,8 @@ jobs:
       #   with:
       #     source: "."
       #     target: "/var/www/mywebsite"
-      - name: Get env
-        run: echo "The selected color is ${{ secrets.HOST }} ${{ secrets.USERNAME }}  ${{ secrets.PORT }} ${{ secrets.SSHKEY }}"
+      # - name: Get env
+      #   run: echo "The selected color is ${{ secrets.HOST }} ${{ secrets.USERNAME }}  ${{ secrets.PORT }} ${{ secrets.SSHKEY }}"
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
