@@ -227,7 +227,7 @@ export default function Footer(props) {
             </div>
             <div className={classes.text}>
               DefiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
-              | Power by <span className={classes.icon} /> Binance Smart Chainnn
+              | Power by <span className={classes.icon} /> Binance Smart Chain
             </div>
           </div>
         </footer>

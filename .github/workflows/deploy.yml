@@ -1,6 +1,11 @@
 name: Deploy
 
-on: [push]
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - develop
 
 jobs:
   build:
@@ -8,19 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-
-      # - name: Copy repository contents via scp
-      #   uses: appleboy/scp-action@master
-      #   env:
-      #     HOST: ${{ secrets.HOST }}
-      #     USERNAME: ${{ secrets.USERNAME }}
-      #     PORT: ${{ secrets.PORT }}
-      #     KEY: ${{ secrets.SSHKEY }}
-      #   with:
-      #     source: "."
-      #     target: "/var/www/mywebsite"
-      # - name: Get env
-      #   run: echo "The selected color is ${{ secrets.HOST }} ${{ secrets.USERNAME }}  ${{ secrets.PORT }} ${{ secrets.SSHKEY }}"
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
