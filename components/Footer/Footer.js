@@ -26,7 +26,7 @@ import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
 const dropdown = [
   {
     name: "Litepaper",
-    href: "https://github.com/defifarms/brand_assets/blob/main/DefiFarms%20Litepaper.pdfhttps://drive.google.com/file/d/1l_jlB_25GLN7_trv42A_7CB6bcG3ko80/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1l_jlB_25GLN7_trv42A_7CB6bcG3ko80/view?usp=sharing",
   },
   {
     name: "One pager",
