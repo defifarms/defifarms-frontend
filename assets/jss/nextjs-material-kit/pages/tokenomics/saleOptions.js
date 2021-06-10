@@ -88,6 +88,7 @@ const saleOptionsStyles = (theme) => ({
     textAlign: "center",
     padding: "50px 0 0",
     maxWidth: "1902px",
+    margin: "0 auto",
   },
   contracts: {
     ...description,

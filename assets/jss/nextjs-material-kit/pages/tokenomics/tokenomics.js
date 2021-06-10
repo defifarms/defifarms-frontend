@@ -4,7 +4,7 @@ import imageMobile from "assets/img/tokenomics-1.png";
 const tokenomicsStyles = (theme) => ({
   wrapper: {
     background: "#1e0072",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     backgroundPosition: "top center",
     textAlign: "left",
     backgroundImage: "url(" + image + ")",
@@ -16,6 +16,7 @@ const tokenomicsStyles = (theme) => ({
     border: "0",
     alignItems: "center",
     margin: "-1px 0 0",
+    backgroundRepeat: "no-repeat",
     [theme.breakpoints.down("sm")]: {
       padding: "88px 20px 50px",
       backgroundImage: "url(" + imageMobile + ")",
@@ -93,12 +94,14 @@ const tokenomicsStyles = (theme) => ({
     },
   },
   trackingInfo: {
-    maxWidth: "850px",
+    width: "850px",
   },
   flexBox: {
-    padding: "0 3% 96px 25%",
+    padding: "0 0 96px",
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "flex-end",
+    maxWidth: "1300px",
+    margin: "0 auto",
     [theme.breakpoints.down("sm")]: {
       padding: "0",
     },

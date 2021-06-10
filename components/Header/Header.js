@@ -209,13 +209,15 @@ export default function Header(props) {
       </AppBar>
       {toggleMenu && (
         <div className={classes.subMenu}>
-          {dropdown.map((item) => (
-            <Link href={item.href} key={item.name}>
-              <a target="_blank" className={classes.navLink}>
-                {item.name}
-              </a>
-            </Link>
-          ))}
+          <div className={classes.center}>
+            {dropdown.map((item) => (
+              <Link href={item.href} key={item.name}>
+                <a target="_blank" className={classes.navLink}>
+                  {item.name}
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </>

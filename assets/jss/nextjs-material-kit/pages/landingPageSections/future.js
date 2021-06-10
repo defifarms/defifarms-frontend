@@ -19,10 +19,14 @@ const futureStyle = (theme) => ({
     justifyContent: "flex-end",
     margin: "0 auto",
   },
+  container: {
+    backgroundColor: "#1e0072",
+  },
   coinWrapper: {
     height: "auto",
-    margin: "0",
+    margin: "-2px auto 0",
     padding: "72px 0",
+    maxWidth: "1240px",
     display: "flex",
     justifyContent: "flex-end",
     backgroundSize: "cover",

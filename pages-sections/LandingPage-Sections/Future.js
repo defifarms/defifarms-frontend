@@ -22,7 +22,7 @@ export default function Staking() {
   const { t } = useTranslation("common");
 
   return (
-    <>
+    <div className={classes.container}>
       <div className={classes.coinWrapper}>
         <div className={classes.coin}>
           <div className={classes.section}>
@@ -70,6 +70,6 @@ export default function Staking() {
         </GridContainer>
       </div>
       <DefiWay bgImage={sellBg} title={t("Get right here")} isMain />
-    </>
+    </div>
   );
 }

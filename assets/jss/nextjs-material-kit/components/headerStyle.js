@@ -260,9 +260,12 @@ const headerStyle = (theme) => ({
     height: "72px",
     background: "#281da9",
     display: "flex",
-    padding: "15px 0 20px 20%",
+    padding: "15px 0 20px",
     marginTop: "10px",
     transition: "all 150ms ease-in",
+  },
+  center: {
+    margin: "0 auto",
   },
   navLink: {
     color: "#ededed",
