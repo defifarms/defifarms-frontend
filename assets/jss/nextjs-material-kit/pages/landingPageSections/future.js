@@ -13,6 +13,12 @@ const title = {
   padding: "0 0 32px",
 };
 const futureStyle = (theme) => ({
+  coin: {
+    width: "1240px",
+    display: "flex",
+    justifyContent: "flex-end",
+    margin: "0 auto",
+  },
   coinWrapper: {
     height: "auto",
     margin: "0",
@@ -62,8 +68,8 @@ const futureStyle = (theme) => ({
     textAlign: "justify",
   },
   section: {
-    maxWidth: "680px",
-    padding: "0 10% 0 0",
+    maxWidth: "600px",
+    padding: "0 40px 0 0",
     [theme.breakpoints.down("sm")]: {
       padding: "0 20px",
       textAlign: "center",

@@ -24,12 +24,15 @@ export default function Staking() {
   return (
     <>
       <div className={classes.coinWrapper}>
-        <div className={classes.section}>
-          <h5 className={classes.titleFuture}>{t("The Future")}</h5>
-          <h5 className={classes.description}>{t("The Future Description")}</h5>
+        <div className={classes.coin}>
+          <div className={classes.section}>
+            <h5 className={classes.titleFuture}>{t("The Future")}</h5>
+            <h5 className={classes.description}>
+              {t("The Future Description")}
+            </h5>
+          </div>
         </div>
       </div>
-
       <div
         className={classes.wrapper}
         style={{
