@@ -48,7 +48,7 @@ const customDropdownStyle = (theme) => ({
     fontSize: "14px",
     textAlign: "left",
     listStyle: "none",
-    backgroundColor: "#fff",
+    backgroundColor: "#2610b0",
     backgroundClip: "padding-box",
   },
   menuList: {

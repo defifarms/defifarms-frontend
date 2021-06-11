@@ -12,6 +12,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "next-i18next";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Button from "components/CustomButtons/Button.js";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
+
 import Hidden from "@material-ui/core/Hidden";
 import logo from "assets/img/icons/logo.png";
 import icon2 from "assets/img/icons/icon-2.png";
@@ -49,6 +51,15 @@ const dropdown = [
     name: "dApp Roadmap",
   },
 ];
+
+const subList = (navLink) =>
+  dropdown.map((item) => (
+    <Link href={item.href} key={item.name}>
+      <a target="_blank" className={navLink}>
+        {item.name}
+      </a>
+    </Link>
+  ));
 
 const menu = [
   { route: "/tokenomics", name: "Tokenomics" },
@@ -134,16 +145,17 @@ export default function Footer(props) {
                 </Link>
               </Hidden>
             ) : item.name === "Whitepaper" ? (
-              <ListItem className={classes.listItem} onClick={handleClick}>
-                <p
-                  className={classes.navLink}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
+              <ListItem className={classes.listItem}>
+                <CustomDropdown
+                  noLiPadding
+                  navDropdown
+                  buttonText="Whitepaper"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent",
                   }}
-                >
-                  Whitepaper <span className={caretClasses} />
-                </p>
+                  dropdownList={subList(classes.navLink)}
+                />
               </ListItem>
             ) : (
               <ListItem className={classes.listItem} key={item.name}>

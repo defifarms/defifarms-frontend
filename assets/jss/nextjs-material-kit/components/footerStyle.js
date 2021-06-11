@@ -68,7 +68,7 @@ const footerStyle = (theme) => ({
   },
   navLink: {
     cursor: "pointer",
-    color: "inherit",
+    color: "#CFCFCF",
     position: "relative",
     padding: "12px",
     fontWeight: "600",

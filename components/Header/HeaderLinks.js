@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import classNames from "classnames";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Hidden from "@material-ui/core/Hidden";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -39,6 +40,15 @@ const dropdown = [
     name: "dApp Roadmap",
   },
 ];
+
+const subList = (navLink) =>
+  dropdown.map((item) => (
+    <Link href={item.href} key={item.name}>
+      <a target="_blank" className={navLink}>
+        {item.name}
+      </a>
+    </Link>
+  ));
 
 export default function HeaderLinks({
   onClick,
@@ -91,31 +101,17 @@ export default function HeaderLinks({
             <a className={classes.navLink}>Roadmap</a>
           </Link>
         </ListItem>
-        <ListItem className={classes.listItem} onClick={handleClick}>
-          <p
-            className={classes.navLink}
-            style={{
-              display: "flex",
-              alignItems: "center",
+        <ListItem className={classes.listItem}>
+          <CustomDropdown
+            noLiPadding
+            navDropdown
+            buttonText="Whitepaper"
+            buttonProps={{
+              className: classes.navLink,
+              color: "transparent",
             }}
-          >
-            Whitepaper <span className={caretClasses} />
-          </p>
-          <Hidden mdUp implementation="js">
-            <div className={subMenu}>
-              {dropdown.map((item) => (
-                <Link href={item.href} key={item.name}>
-                  <a
-                    target="_blank"
-                    className={classes.navLink1}
-                    onClick={onClick}
-                  >
-                    {item.name}
-                  </a>
-                </Link>
-              ))}
-            </div>
-          </Hidden>
+            dropdownList={subList(classes.navLink)}
+          />
         </ListItem>
         <ListItem className={classes.listItem} onClick={onClick}>
           <Link
