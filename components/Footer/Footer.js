@@ -28,11 +28,11 @@ import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
 const dropdown = [
   {
     name: "Litepaper",
-    href: "https://drive.google.com/file/d/1l_jlB_25GLN7_trv42A_7CB6bcG3ko80/view?usp=sharing",
+    href: "./documents/DefiFarms_Litepaper.pdf",
   },
   {
     name: "One pager",
-    href: "https://drive.google.com/file/d/1e-N5mEPfdEJO-Q76LZZIhEVOqC1wyKyJ/view?usp=sharing",
+    href: "./documents/One_Pager.pdf",
   },
   {
     name: "Infographics",
@@ -40,14 +40,14 @@ const dropdown = [
   },
   {
     name: "Tokenomics",
-    href: "https://github.com/defifarms/brand_assets/blob/main/Tokenomics.pdf",
+    href: "./documents/Tokenomics.pdf",
   },
   {
     name: "Whitepaper",
-    href: "https://drive.google.com/file/d/16rlbSp4cd_RpGDuPp7VPBpKeGTJ8_yYb/view?usp=sharing",
+    href: "./documents/Defifarms_Whitepaper.pdf",
   },
   {
-    href: "https://github.com/defifarms/brand_assets/blob/main/dApp%20Roadmap.pdf",
+    href: "./documents/dApp_Roadmap.pdf",
     name: "dApp Roadmap",
   },
 ];
