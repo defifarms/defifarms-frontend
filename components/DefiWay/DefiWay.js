@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "next-i18next";
@@ -83,7 +83,7 @@ const Team = ({ name, image, position, linkedin }) => {
   );
 };
 
-const DefiWay = ({ bgImage, title, isMain }) => {
+const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
   const classes = useStyles();
   const { t } = useTranslation("common");
   const [roadmap, setRoadmap] = useState({});
@@ -130,7 +130,7 @@ const DefiWay = ({ bgImage, title, isMain }) => {
         </GridContainer>
       </div>
       {isMain && (
-        <div className={classes.platformWrapper}>
+        <div className={classes.platformWrapper} ref={ref}>
           <h5 className={classes.partners}>Team members</h5>
           <div className={classes.partnersWrapper}>
             {teams.map((item) => (
@@ -262,6 +262,6 @@ const DefiWay = ({ bgImage, title, isMain }) => {
       )}
     </>
   );
-};
+});
 
 export default DefiWay;

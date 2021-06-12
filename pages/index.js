@@ -1,6 +1,7 @@
 import React, { useRef, useCallback, useEffect } from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
 
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
@@ -30,6 +31,20 @@ const theme = createMuiTheme({
 export default function LandingPage(props) {
   const refStaking = useRef();
   const refLocking = useRef();
+  const refTeam = useRef();
+  const router = useRouter();
+  const { q } = router.query;
+  useEffect(() => {
+    if (q === "team") {
+      moveToTeam();
+    }
+  }, [q]);
+
+  const moveToTeam = useCallback(() => {
+    refTeam.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
 
   useEffect(() => {
     window.addEventListener("load", googleTranslateElementInit);
@@ -50,7 +65,6 @@ export default function LandingPage(props) {
 
   const googleTranslateElementInit = () => {
     if (!window["google"]) {
-      console.log("script added");
       var script = document.createElement("SCRIPT");
       script.src =
         "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -80,7 +94,7 @@ export default function LandingPage(props) {
             refStaking: refStaking,
           }}
         />
-        <Future />
+        <Future ref={refTeam} />
       </ThemeProvider>
     </div>
   );

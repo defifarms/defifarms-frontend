@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "next-i18next";
@@ -17,7 +17,7 @@ import sellBg from "assets/img/private-bg.png";
 
 const useStyles = makeStyles(styles);
 
-export default function Staking() {
+const Future = forwardRef((props, ref) => {
   const classes = useStyles();
   const { t } = useTranslation("common");
 
@@ -69,7 +69,9 @@ export default function Staking() {
           </GridItem>
         </GridContainer>
       </div>
-      <DefiWay bgImage={sellBg} title={t("Get right here")} isMain />
+      <DefiWay ref={ref} bgImage={sellBg} title={t("Get right here")} isMain />
     </div>
   );
-}
+});
+
+export default Future;

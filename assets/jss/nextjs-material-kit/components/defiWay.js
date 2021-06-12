@@ -42,7 +42,7 @@ const futureStyle = (theme) => ({
     },
   },
   partnersWrapper: {
-    padding: "0 40px",
+    padding: "0 40px 60px 40px",
     maxWidth: "1240px",
     margin: "0 auto",
     width: "100%",
@@ -83,7 +83,7 @@ const futureStyle = (theme) => ({
     lineHeight: "48px",
     letterSpacing: "-0.015em",
     margin: "0",
-    padding: "60px 0",
+    padding: "0 0 60px",
     color: "#fff",
     textAlign: "center",
     [theme.breakpoints.down("sm")]: {
@@ -163,7 +163,7 @@ const futureStyle = (theme) => ({
   },
   platformWrapper: {
     background: "#1e0072",
-    padding: "50px 120px 50px 55px",
+    padding: "110px 120px 50px 55px",
     [theme.breakpoints.down("md")]: {
       padding: "72px 55px",
     },

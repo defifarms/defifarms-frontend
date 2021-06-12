@@ -166,10 +166,8 @@ export default function Footer(props) {
             )
           )}
           <ListItem className={classes.listItem}>
-            <Link href="mailto:contact@defifarms.org" target="_blank">
-              <a target="_blank" className={classes.navLink}>
-                Support
-              </a>
+            <Link href={{ pathname: "/", query: { q: "team" } }}>
+              <a className={classes.navLink}>Team</a>
             </Link>
           </ListItem>
         </List>
