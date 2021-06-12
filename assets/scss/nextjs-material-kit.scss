@@ -50,3 +50,32 @@
 body {
   top: 0 !important;
 }
+
+.teamImg {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    left: auto;
+    top: 0;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    content: "";
+    background: rgba(70, 82, 152, 0.65);
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.teamImg:hover.teamImg:before {
+  border-radius: 50%;
+  opacity: 1;
+  visibility: visible;
+}

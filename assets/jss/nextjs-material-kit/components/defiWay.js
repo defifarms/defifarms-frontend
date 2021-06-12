@@ -83,7 +83,7 @@ const futureStyle = (theme) => ({
     lineHeight: "48px",
     letterSpacing: "-0.015em",
     margin: "0",
-    padding: "100px 0",
+    padding: "60px 0",
     color: "#fff",
     textAlign: "center",
     [theme.breakpoints.down("sm")]: {
@@ -163,7 +163,7 @@ const futureStyle = (theme) => ({
   },
   platformWrapper: {
     background: "#1e0072",
-    padding: "72px 120px 72px 55px",
+    padding: "50px 120px 50px 55px",
     [theme.breakpoints.down("md")]: {
       padding: "72px 55px",
     },
@@ -186,6 +186,52 @@ const futureStyle = (theme) => ({
     textDecoration: "underline",
     "&:hover": {
       color: "#fff",
+    },
+  },
+  team: {
+    borderRadius: "50%",
+    width: "200px",
+    height: "200px",
+    [theme.breakpoints.down("md")]: {
+      width: "170px",
+      height: "170px",
+    },
+  },
+  teamName: {
+    fontSize: "18px",
+    color: "#0089f9",
+    padding: "20px 0 15px",
+    fontFamily: "Poppins",
+    fontWeight: "700",
+    margin: "0",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
+  },
+  teamPosition: {
+    fontFamily: "SF UI Text",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "16px",
+    color: "#fff",
+    padding: "0 0 15px",
+    margin: "0",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
+  },
+  btnTeam: {
+    ...btn,
+    border: "1px solid #FEA23E",
+    borderRadius: "25px",
+
+    margin: "0",
+    fontFamily: "Source Sans Pro",
+    letterSpacing: "-0.015em",
+    color: "#FEA23E",
+    height: "28px",
+    [theme.breakpoints.down("sm")]: {
+      margin: "32px 0 0 0",
     },
   },
 });

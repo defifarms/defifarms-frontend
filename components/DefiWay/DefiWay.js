@@ -11,8 +11,6 @@ import Button from "components/CustomButtons/Button.js";
 import { getRoadmap } from "helpers/times.js";
 
 // Icons
-import bsc from "assets/img/icons/bsc.png";
-import basic from "assets/img/icons/basic.png";
 import av from "assets/img/icons/av.png";
 import nodle from "assets/img/icons/nodle.png";
 import kaikaikim from "assets/img/icons/logo_kaikaikim.png";
@@ -20,10 +18,70 @@ import orientCapital from "assets/img/icons/orient-capital.png";
 import seoul from "assets/img/icons/seoul.png";
 import minLab from "assets/img/icons/minLab.png";
 import ichiTek from "assets/img/icons/ichiTek.png";
+import blake from "assets/img/avatar/blake.jpeg";
+import cesar from "assets/img/avatar/cesar.jpeg";
+import harrik from "assets/img/avatar/harrik.jpeg";
+import markas from "assets/img/avatar/markas.jpeg";
+import zackhary from "assets/img/avatar/zackhary.jpeg";
 
 import styles from "assets/jss/nextjs-material-kit/components/defiWay.js";
 
 const useStyles = makeStyles(styles);
+
+const teams = [
+  {
+    name: "Cesar Deandre",
+    image: cesar,
+    position: "CEO & Co-Founder",
+    linkedin: "https://www.linkedin.com/in/cesar-deandre-b0867b1b3/",
+  },
+  {
+    name: "Zackhary Brown",
+    image: zackhary,
+    position: "CMO & Co-Founder",
+    linkedin: "https://www.linkedin.com/in/zackhary-brown-ab3b731ba/",
+  },
+  {
+    name: "Harrik Medsam",
+    image: harrik,
+    position: "Chief Finacial Officer",
+    linkedin: "https://www.linkedin.com/in/harrik-medsam-22137120b/",
+  },
+  {
+    name: "Blake Dalton",
+    image: blake,
+    position: "Blockchain Developer",
+    linkedin: "https://www.linkedin.com/in/blake-dalton-8a4577206/",
+  },
+  {
+    name: "Markas Sallu",
+    image: markas,
+    position: "Blockchain Architect",
+    linkedin: "https://www.linkedin.com/in/markas-sallu-72a18320b/",
+  },
+];
+
+const Team = ({ name, image, position, linkedin }) => {
+  const classes = useStyles();
+  return (
+    <div className={classes.partnersIcon}>
+      <div className={classes.teamImg + " teamImg"}>
+        <img src={image} alt="basic" className={classes.team} />
+      </div>
+
+      <h5 className={classes.teamName}>{name}</h5>
+      <h5 className={classes.teamPosition}>{position}</h5>
+      <Button
+        color="transparent"
+        target="_blank"
+        className={classes.btnTeam}
+        href={linkedin}
+      >
+        in
+      </Button>
+    </div>
+  );
+};
 
 const DefiWay = ({ bgImage, title, isMain }) => {
   const classes = useStyles();
@@ -73,18 +131,20 @@ const DefiWay = ({ bgImage, title, isMain }) => {
       </div>
       {isMain && (
         <div className={classes.platformWrapper}>
+          <h5 className={classes.partners}>Team members</h5>
+          <div className={classes.partnersWrapper}>
+            {teams.map((item) => (
+              <Team
+                key={item.name}
+                name={item.name}
+                image={item.image}
+                position={item.position}
+                linkedin={item.linkedin}
+              />
+            ))}
+          </div>
           <h5 className={classes.partners}>Ecosystem Partners</h5>
           <div className={classes.partnersWrapper}>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={basic}
-                alt="basic"
-                width="150"
-                height="50"
-                layout="intrinsic"
-                className={classes.partnersIcon}
-              />
-            </div>
             <div className={classes.partnersIcon}>
               <Image
                 src={nodle}

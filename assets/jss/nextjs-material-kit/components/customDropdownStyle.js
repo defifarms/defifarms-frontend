@@ -49,6 +49,9 @@ const customDropdownStyle = (theme) => ({
     textAlign: "left",
     listStyle: "none",
     backgroundColor: "#2610b0",
+    [theme.breakpoints.down("sm")]: {
+      backgroundColor: "#fff",
+    },
     backgroundClip: "padding-box",
   },
   menuList: {
@@ -59,7 +62,7 @@ const customDropdownStyle = (theme) => ({
     position: "absolute !important",
     [theme.breakpoints.down("sm")]: {
       zIndex: "1640",
-      // position: "static !important",
+      position: "static !important",
       float: "none",
       width: "auto",
       marginTop: "0",
