@@ -1,6 +1,6 @@
-# defifarms-frontend
+# DeFiFarms-frontend
 
-DefiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm &amp; AMM
+DeFiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm &amp; AMM
 
 ## PACKAGE MANAGER
 

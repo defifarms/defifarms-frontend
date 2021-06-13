@@ -1,7 +1,7 @@
 {
-  "name": "DefiFarms",
+  "name": "DeFiFarms",
   "version": "1.1.0",
-  "description": "DefiFarms  - The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain",
+  "description": "DeFiFarms  - The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

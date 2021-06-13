@@ -45,7 +45,7 @@ const dropdown = [
   },
   {
     name: "Whitepaper",
-    href: "./documents/Defifarms_Whitepaper.pdf",
+    href: "./documents/DeFiFarms_Whitepaper.pdf",
   },
   {
     href: "./documents/dApp_Roadmap.pdf",
@@ -122,7 +122,7 @@ export default function Header(props) {
               <a>
                 <img
                   src={logo}
-                  alt="DefiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM"
+                  alt="DeFiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM"
                   className={classes.logo}
                 />
               </a>
@@ -174,7 +174,7 @@ export default function Header(props) {
               <div className={classes.flexMobile}>
                 <Link href="/">
                   <a onClick={handleDrawerToggle}>
-                    <img src={logo} alt="DefiFarms" className={classes.logo} />
+                    <img src={logo} alt="DeFiFarms" className={classes.logo} />
                   </a>
                 </Link>
                 <div className={classes.flexBox}>

@@ -130,7 +130,7 @@ export default function Footer(props) {
         <Hidden smUp implementation="js">
           <Link href="/">
             <a>
-              <img src={logo} alt="DefiFarms" className={classes.logo} />
+              <img src={logo} alt="DeFiFarms" className={classes.logo} />
             </a>
           </Link>
         </Hidden>
@@ -140,7 +140,7 @@ export default function Footer(props) {
               <Hidden key={item} smDown implementation="css" key={item.name}>
                 <Link href="/">
                   <a>
-                    <img src={logo} alt="DefiFarms" className={classes.logo} />
+                    <img src={logo} alt="DeFiFarms" className={classes.logo} />
                   </a>
                 </Link>
               </Hidden>
@@ -236,7 +236,7 @@ export default function Footer(props) {
               </Button>
             </div>
             <div className={classes.text}>
-              DefiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
+              DeFiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
               | Power by <span className={classes.icon} /> Binance Smart Chain
             </div>
           </div>

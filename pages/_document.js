@@ -15,11 +15,11 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <meta
             name="description"
-            content="DefiFarms  - The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain"
+            content="DeFiFarms  - The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM on Binance Smart Chain"
           />
           <meta
             name="keywords"
-            content="defifarms, defi, nft, nft protocol, amm, yield farming, yield farm, auto liquidity provider"
+            content="DeFiFarms, defi, nft, nft protocol, amm, yield farming, yield farm, auto liquidity provider"
           />
           <meta
             property="og:image"

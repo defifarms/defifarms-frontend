@@ -32,14 +32,14 @@ const MyApp = ({ Component, pageProps }) => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          DefiFarms: The First NFTs Protocol Powerful Automatic Liquidity
+          DeFiFarms: The First NFTs Protocol Powerful Automatic Liquidity
           Acquisition Yield Farm & AMM
         </title>
       </Head>
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="DefiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM"
+        brand="DeFiFarms: The First NFTs Protocol Powerful Automatic Liquidity Acquisition Yield Farm & AMM"
         fixed
         changeColorOnScroll={{
           height: 100,
