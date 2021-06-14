@@ -25,8 +25,12 @@ class MyDocument extends Document {
             property="og:image"
             content="https://media.graphcms.com/output=format:jpg/nL7obH1qTWa15XW9Jbhg?_ga=2.48402534.19753175.1620827862-2077535728.1620827862"
           />
-          <link rel="shortcut icon" href="/logo.png" />
-          <link rel="apple-touch-icon" sizes="76x76" href="/logo.png" />
+          <link rel="shortcut icon" href="https://defifarms.org/logo.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="https://defifarms.org/logo.png"
+          />
           {/* Fonts and icons */}
           <link
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
