@@ -37,8 +37,9 @@ export default function BounceSection() {
             to buy DEFIY tokens at {roadmap.title}.
           </h5>
           <h5 className={classes.description}>
-            {roadmap.title} is opening the whitelisting process{" "}
-            {roadmap.dateTitle}
+            {/* {roadmap.title} is opening the whitelisting process{" "}
+            {roadmap.dateTitle} */}
+            Whitelist Lottery is live!
           </h5>
           <Clock startTime={roadmap.date} endTime={roadmap.nextDate} />
           <Button
