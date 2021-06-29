@@ -122,11 +122,12 @@ const productStyle = (theme) => ({
     textTransform: "none",
     borderRadius: "0",
     cursor: "pointer",
-    borderRadius: "0",
+
     background: "transparent",
     "&:hover": {
       background: "#FEA23E",
       color: "#fff",
+      borderRadius: "0",
     },
   },
   formGroup: {
