@@ -135,7 +135,7 @@ const productStyle = (theme) => ({
   formGroup: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-end",
     paddingTop: "40px",
   },
 });
