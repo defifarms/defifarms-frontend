@@ -13,7 +13,10 @@ const useStyles = makeStyles(styles);
 export default function ProductSection() {
   const classes = useStyles();
   const { t } = useTranslation("common");
-
+  const [value, setValue] = React.useState("");
+  const onchange = (e) => {
+    setValue(e.target.value);
+  };
   return (
     <>
       <div
@@ -56,14 +59,18 @@ export default function ProductSection() {
               type="email"
               name="member[email]"
               id="member_email"
+              onChange={onchange}
             />
-            <input
+            <Button
               type="submit"
               value="Subscribe"
               name="member[subscribe]"
               id="member_submit"
+              //disabled={!value}
               className={classes.btnSub}
-            />
+            >
+              Subscribe
+            </Button>
           </div>
         </form>
       </div>
