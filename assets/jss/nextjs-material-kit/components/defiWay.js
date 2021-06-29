@@ -6,6 +6,7 @@ const btn = {
   lineHeight: "27px",
   transition: "none",
   textTransform: "none",
+  cursor: "pointer",
   "&:hover": {
     background: "#FEA23E",
     color: "#fff",
@@ -233,6 +234,32 @@ const futureStyle = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       margin: "32px 0 0 0",
     },
+  },
+  formWrapper: {
+    margin: "0 auto",
+    width: "400px",
+    paddingTop: "40px",
+    textAlign: "center",
+  },
+  input: {
+    border: "none",
+    padding: "12px 23px",
+    fontSize: "13px",
+    background: "#fff",
+    fontStyle: "normal",
+    fontFamily: "SF UI Text",
+    fontWeight: "500",
+    lineHeight: "15px",
+    borderRadius: "25px",
+    marginBottom: "15px",
+    mixBlendMode: "normal",
+  },
+  labelWrapper: {
+    width: "200px",
+    textAlign: "left",
+  },
+  formGroup: {
+    display: "flex",
   },
 });
 

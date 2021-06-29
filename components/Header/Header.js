@@ -23,35 +23,36 @@ import { getRoadmap } from "helpers/times.js";
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
 import logo from "assets/img/icons/logo.png";
+import { dropdown } from "constants/roadmap.js";
 
 const useStyles = makeStyles(styles);
 
-const dropdown = [
-  {
-    name: "Litepaper",
-    href: "./documents/DefiFarms_Litepaper.pdf",
-  },
-  {
-    name: "One pager",
-    href: "./documents/One_Pager.pdf",
-  },
-  {
-    name: "Infographics",
-    href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
-  },
-  {
-    name: "Tokenomics",
-    href: "./documents/Tokenomics.pdf",
-  },
-  {
-    name: "Whitepaper",
-    href: "./documents/DeFiFarms_Whitepaper.pdf",
-  },
-  {
-    href: "./documents/dApp_Roadmap.pdf",
-    name: "dApp Roadmap",
-  },
-];
+// const dropdown = [
+//   {
+//     name: "Litepaper",
+//     href: "./documents/DefiFarms_Litepaper.pdf",
+//   },
+//   {
+//     name: "One pager",
+//     href: "./documents/One_Pager.pdf",
+//   },
+//   {
+//     name: "Infographics",
+//     href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
+//   },
+//   {
+//     name: "Tokenomics",
+//     href: "./documents/Tokenomics.pdf",
+//   },
+//   {
+//     name: "Whitepaper",
+//     href: "./documents/DeFiFarms_Whitepaper.pdf",
+//   },
+//   {
+//     href: "./documents/dApp_Roadmap.pdf",
+//     name: "dApp Roadmap",
+//   },
+// ];
 export default function Header(props) {
   const [roadmap, setRoadmap] = useState({});
   useEffect(() => {

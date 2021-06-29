@@ -25,32 +25,7 @@ import linkedin from "assets/img/icons/linkedin.png";
 import redit from "assets/img/icons/redit.png";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
-const dropdown = [
-  {
-    name: "Litepaper",
-    href: "./documents/DefiFarms_Litepaper.pdf",
-  },
-  {
-    name: "One pager",
-    href: "./documents/One_Pager.pdf",
-  },
-  {
-    name: "Infographics",
-    href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
-  },
-  {
-    name: "Tokenomics",
-    href: "./documents/Tokenomics.pdf",
-  },
-  {
-    name: "Whitepaper",
-    href: "./documents/Defifarms_Whitepaper.pdf",
-  },
-  {
-    href: "./documents/dApp_Roadmap.pdf",
-    name: "dApp Roadmap",
-  },
-];
+import { dropdown } from "constants/roadmap.js";
 
 const subList = (navLink) =>
   dropdown.map((item) => (

@@ -11,35 +11,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import styles from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
-
+import { dropdown } from "constants/roadmap.js";
 const useStyles = makeStyles(styles);
-
-const dropdown = [
-  {
-    name: "Litepaper",
-    href: "./documents/DefiFarms_Litepaper.pdf",
-  },
-  {
-    name: "One pager",
-    href: "./documents/One_Pager.pdf",
-  },
-  {
-    name: "Infographics",
-    href: "https://github.com/defifarms/brand_assets/tree/main/Infographics",
-  },
-  {
-    name: "Tokenomics",
-    href: "./documents/Tokenomics.pdf",
-  },
-  {
-    name: "Whitepaper",
-    href: "./documents/Defifarms_Whitepaper.pdf",
-  },
-  {
-    href: "./documents/dApp_Roadmap.pdf",
-    name: "dApp Roadmap",
-  },
-];
 
 const subList = (navLink) =>
   dropdown.map((item) => (

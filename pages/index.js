@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useRef, useCallback, useEffect, useState } from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
@@ -78,6 +78,21 @@ export default function LandingPage(props) {
       "google_translate_element"
     );
   };
+
+  const [counter, setCounter] = useState(10);
+
+  useEffect(() => {
+    const timer =
+      counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
+    return () => clearInterval(timer);
+  }, [counter]);
+
+  useEffect(() => {
+    if (counter === 0) {
+      window.open("https://odoo.defifarms.org/");
+    }
+  }, [counter]);
+
   return (
     <div>
       <ThemeProvider theme={theme}>
