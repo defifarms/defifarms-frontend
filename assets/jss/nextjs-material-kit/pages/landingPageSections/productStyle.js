@@ -128,9 +128,6 @@ const productStyle = (theme) => ({
       background: "#FEA23E",
       color: "#fff",
     },
-    [theme.breakpoints.down("sm")]: {
-      margin: "32",
-    },
   },
   formGroup: {
     display: "flex",
