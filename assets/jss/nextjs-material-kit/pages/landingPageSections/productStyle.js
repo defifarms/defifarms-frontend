@@ -129,6 +129,11 @@ const productStyle = (theme) => ({
       color: "#fff",
       borderRadius: "0",
     },
+    "&:focus": {
+      background: "#FEA23E",
+      color: "#fff",
+      borderRadius: "0",
+    },
   },
   formGroup: {
     display: "flex",
