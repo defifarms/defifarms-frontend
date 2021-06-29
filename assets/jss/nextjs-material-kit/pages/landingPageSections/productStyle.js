@@ -88,6 +88,7 @@ const productStyle = (theme) => ({
     lineHeight: "15px",
     marginBottom: "0",
     mixBlendMode: "normal",
+    borderRadius: "0",
     width: "300px",
     [theme.breakpoints.down("sm")]: {
       width: "200px",
@@ -119,7 +120,10 @@ const productStyle = (theme) => ({
     letterSpacing: "-0.015em",
     color: "#FEA23E",
     textTransform: "none",
+    borderRadius: "0",
     cursor: "pointer",
+    borderRadius: "0",
+    background: "transparent",
     "&:hover": {
       background: "#FEA23E",
       color: "#fff",
