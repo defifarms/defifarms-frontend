@@ -61,7 +61,7 @@ export default function ProductSection() {
               id="member_email"
               onChange={onchange}
             />
-            <Button
+            <button
               type="submit"
               value="Subscribe"
               name="member[subscribe]"
@@ -70,7 +70,7 @@ export default function ProductSection() {
               className={classes.btnSub}
             >
               Subscribe
-            </Button>
+            </button>
           </div>
         </form>
       </div>
