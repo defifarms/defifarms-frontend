@@ -50,6 +50,13 @@ class MyDocument extends Document {
           ></script>
           <script
             type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js.hs-scripts.com/20329563.js"
+          ></script>
+          <script
+            type="text/javascript"
             charset="UTF-8"
             async
             src="https://translate.googleapis.com/element/TE_20210224_00/e/js/element/element_main.js"
