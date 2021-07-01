@@ -43,7 +43,7 @@ export default function ProductSection() {
           {t("Join The Community")}
         </Button>
       </div>
-      <div id="revue-embed" className={classes.formWrapper}>
+      {/* <div id="revue-embed" className={classes.formWrapper}>
         <form
           action="https://www.getrevue.co/profile/defifarms/add_subscriber"
           method="post"
@@ -52,16 +52,16 @@ export default function ProductSection() {
           target="_blank"
         >
           <label className={classes.label}>Subscribe to our newsletter</label>
-          <div class={classes.formGroup}>
+          <div className={classes.formGroup}>
             <input
-              class={classes.input}
+              className={classes.input}
               placeholder="Your email address..."
               type="email"
               name="member[email]"
               id="member_email"
               onChange={onchange}
             />
-            <Button
+            <button
               type="submit"
               value="Subscribe"
               name="member[subscribe]"
@@ -70,10 +70,10 @@ export default function ProductSection() {
               className={classes.btnSub}
             >
               Subscribe
-            </Button>
+            </button>
           </div>
         </form>
-      </div>
+      </div> */}
     </>
   );
 }

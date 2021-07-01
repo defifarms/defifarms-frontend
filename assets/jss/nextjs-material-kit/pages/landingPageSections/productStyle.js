@@ -86,7 +86,7 @@ const productStyle = (theme) => ({
     fontFamily: "SF UI Text",
     fontWeight: "500",
     lineHeight: "15px",
-    marginBottom: "0",
+    margin: "0",
     mixBlendMode: "normal",
     borderRadius: "0",
     width: "300px",
