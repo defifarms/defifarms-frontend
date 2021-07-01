@@ -89,6 +89,7 @@ export default function SectionCarousel({ moveToStaking, moveToLocking }) {
                             color="transparent"
                             target="_blank"
                             className={classes.btn}
+                            re="noopener"
                             onClick={moveToStaking}
                           >
                             DEFIY STAKING
@@ -126,6 +127,7 @@ export default function SectionCarousel({ moveToStaking, moveToLocking }) {
                             <Button
                               color="transparent"
                               target="_blank"
+                              re="noopener"
                               className={classes.btn}
                               onClick={moveToLocking}
                             >
@@ -159,6 +161,7 @@ export default function SectionCarousel({ moveToStaking, moveToLocking }) {
                           <Button
                             color="transparent"
                             target="_blank"
+                            re="noopener"
                             className={classes.btn}
                             onClick={moveToStaking}
                           >

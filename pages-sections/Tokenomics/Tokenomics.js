@@ -48,6 +48,7 @@ const Tokenomics = () => {
           className={classes.tokenValue}
           href="https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
           target="_blank"
+          re="noopener"
         >
           0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847
         </a>

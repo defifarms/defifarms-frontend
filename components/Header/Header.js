@@ -212,7 +212,7 @@ export default function Header(props) {
           <div className={classes.center}>
             {dropdown.map((item) => (
               <Link href={item.href} key={item.name}>
-                <a target="_blank" ref="noopener" className={classes.navLink}>
+                <a target="_blank" rel="noopener" className={classes.navLink}>
                   {item.name}
                 </a>
               </Link>

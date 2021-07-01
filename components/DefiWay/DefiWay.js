@@ -74,6 +74,7 @@ const Team = ({ name, image, position, linkedin }) => {
       <Button
         color="transparent"
         target="_blank"
+        re="noopener"
         className={classes.btnTeam}
         href={linkedin}
       >
@@ -113,13 +114,14 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
                 target="_blank"
                 className={classes.btn}
                 href={roadmap.link}
-                target="_blank"
+                re="noopener"
               >
                 Join {roadmap.title}
               </Button>
               <Button
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btnContact}
                 href="mailto:contact@defifarms.org"
               >
@@ -242,6 +244,7 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
             <div className={classes.partnersIcon}>
               <a
                 target="_blank"
+                re="noopener"
                 className={classes.descriptionLink}
                 href="https://www.einnews.com/pr_news/542577199/defifarms-is-using-the-power-of-nft-s-to-revolutionize-the-decentralized-finance-world"
               >
@@ -251,6 +254,7 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
             <div className={classes.partnersIcon}>
               <a
                 target="_blank"
+                re="noopener"
                 className={classes.descriptionLink}
                 href="https://techtodaynewspaper.com/defifarms-is-using-the-power-of-nfts-to-revolutionize-the-decentralized-finance-world/"
               >
