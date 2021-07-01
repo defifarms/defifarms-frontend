@@ -86,7 +86,7 @@ body {
     border: none;
     margin: 0;
     padding: 12px 23px;
-    font-size: 13px;
+    font-size: 14px;
     background: #fff;
     font-style: normal;
     font-family: SF UI Text;
@@ -125,6 +125,18 @@ body {
 
 .hs-error-msgs {
   display: none !important;
+}
+
+#label-email-faeaca18-a4ba-4d8a-8100-dc67728e39b6 {
+  font-size: 20px;
+  font-family: SF UI Text;
+}
+.submitted-message {
+  font-size: 20px;
+  font-family: SF UI Text;
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
 }
 @media only screen and (max-width: 600px) {
   .hs-input {
