@@ -43,7 +43,7 @@ export default function ProductSection() {
           {t("Join The Community")}
         </Button>
       </div>
-      <div id="revue-embed" className={classes.formWrapper}>
+      {/* <div id="revue-embed" className={classes.formWrapper}>
         <form
           action="https://www.getrevue.co/profile/defifarms/add_subscriber"
           method="post"
@@ -73,7 +73,7 @@ export default function ProductSection() {
             </button>
           </div>
         </form>
-      </div>
+      </div> */}
     </>
   );
 }
