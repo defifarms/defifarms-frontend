@@ -3,6 +3,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import HubspotForm from 'react-hubspot-form'
+
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import SectionCarousel from "pages-sections/LandingPage-Sections/SectionCarousel.js";
@@ -103,14 +104,14 @@ export default function LandingPage(props) {
           moveToLocking={moveToLocking}
         />
         <ProductSection />
-        {/* <HubspotForm
-          region="na1"
-          portalId='20329563'
-          formId='13a21372-34f2-42bd-8656-7af325c6dcc9'
-          onSubmit={() => console.log('Submit!')}
-          onReady={(form) => console.log('Form ready!')}
-          loading={<div>Loading...</div>}
-        /> */}
+          <HubspotForm
+            region="na1"
+            portalId='20329563'
+            formId='faeaca18-a4ba-4d8a-8100-dc67728e39b6'
+            onSubmit={() => console.log('Submit!')}
+            onReady={(form) => console.log('Form ready!')}
+            loading={<div>Loading...</div>}
+          />      
         <Fungible />
         <BounceSection />
         <Staking
