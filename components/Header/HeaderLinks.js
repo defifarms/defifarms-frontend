@@ -15,7 +15,7 @@ const useStyles = makeStyles(styles);
 const subList = (navLink) =>
   dropdown.map((item) => (
     <Link href={item.href} key={item.name}>
-      <a target="_blank" ref="noopener" className={navLink}>
+      <a target="_blank" re="noopener" className={navLink}>
         {item.name}
       </a>
     </Link>

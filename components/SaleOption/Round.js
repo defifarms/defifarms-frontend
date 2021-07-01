@@ -64,7 +64,6 @@ const Round = ({ title, labels, date, nextDate, dateTitle, link }) => {
       </div>
       <Button
         color="transparent"
-        color="transparent"
         className={classes.btn}
         rel="noopener"
         href={link}

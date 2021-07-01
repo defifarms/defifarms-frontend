@@ -159,6 +159,7 @@ const SaleOptions = forwardRef((props, ref) => {
                 <a
                   href={item.link}
                   target="_blank"
+                  re="noopener"
                   className={classes.tokenvalue}
                 >
                   {item.value}

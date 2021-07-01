@@ -31,6 +31,7 @@ export default function BounceSection() {
               className={classes.descriptionLink}
               href={roadmap.link}
               target="_blank"
+              re="noopener"
             >
               Register Form
             </a>{" "}
