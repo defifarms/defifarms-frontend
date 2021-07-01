@@ -80,3 +80,54 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+.hs-input {
+  width: 300px;
+    border: none;
+    margin: 0;
+    padding: 12px 23px;
+    font-size: 13px;
+    background: #fff;
+    font-style: normal;
+    font-family: SF UI Text;
+    font-weight: 500;
+    line-height: 15px;
+    border-radius: 0;
+    mix-blend-mode: normal;
+}
+
+.hs-button {
+  color: #FEA23E;
+    width: 115px;
+    border: 1px solid #FEA23E;
+    cursor: pointer;
+    height: 39px;
+    margin: 0;
+    padding: 12px 23px;
+    font-size: 15px;
+    background: transparent;
+    box-sizing: border-box;
+    font-family: SF UI Text;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 0;
+    letter-spacing: -0.015em;
+    text-transform: none;
+}
+
+.hs-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px 0;
+}
+
+.hs-error-msgs {
+  display: none !important;
+}
+@media only screen and (max-width: 600px) {
+  .hs-input {
+    width: auto;
+  }
+}
