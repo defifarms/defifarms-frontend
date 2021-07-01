@@ -83,36 +83,41 @@ body {
 
 .hs-input {
   width: 300px;
-    border: none;
-    margin: 0;
-    padding: 12px 23px;
-    font-size: 14px;
-    background: #fff;
-    font-style: normal;
-    font-family: SF UI Text;
-    font-weight: 500;
-    line-height: 15px;
-    border-radius: 0;
-    mix-blend-mode: normal;
-}
-
-.hs-button {
   color: #FEA23E;
-    width: 115px;
     border: 1px solid #FEA23E;
     cursor: pointer;
-    height: 39px;
+    height: 59px;
     margin: 0;
-    padding: 12px 23px;
+    padding: 16px 24px;
     font-size: 15px;
-    background: transparent;
     box-sizing: border-box;
     font-family: SF UI Text;
     font-weight: 600;
     line-height: 18px;
-    border-radius: 0;
+    border-radius: 6px;
     letter-spacing: -0.015em;
     text-transform: none;
+    background-color: transparent;
+}
+
+.hs-button {
+  
+  color: #fff !important;
+    margin: 0 0 0 7px;
+    padding: 11px 52px;
+    font-size: 20px;
+    background: linear-gradient(
+97.41deg
+, #FEA23E 5.75%, #D6B402 103.93%);
+    font-style: normal;
+    transition: none;
+    font-family: SF UI Text;
+    font-weight: 600;
+    line-height: 36px;
+    border-radius: 6px;
+    text-transform: none;
+    border: none;
+    cursor: pointer;
 }
 
 .hs-form {
@@ -144,5 +149,13 @@ body {
 @media only screen and (max-width: 600px) {
   .hs-input {
     width: auto;
+  }
+
+  .hs-form {
+    display: block;
+  }
+
+  .hs-button {
+    margin-top: 17px;
   }
 }
