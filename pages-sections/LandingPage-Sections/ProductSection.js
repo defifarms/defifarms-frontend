@@ -52,9 +52,9 @@ export default function ProductSection() {
           target="_blank"
         >
           <label className={classes.label}>Subscribe to our newsletter</label>
-          <div class={classes.formGroup}>
+          <div className={classes.formGroup}>
             <input
-              class={classes.input}
+              className={classes.input}
               placeholder="Your email address..."
               type="email"
               name="member[email]"

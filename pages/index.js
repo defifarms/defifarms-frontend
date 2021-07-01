@@ -85,11 +85,13 @@ export default function LandingPage(props) {
     const timer =
       counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
     return () => clearInterval(timer);
-  }, [counter]);
+  }, []);
 
   useEffect(() => {
     if (counter === 0) {
-      window.open("https://odoo.defifarms.org/");
+      const url = "https://odoo.defifarms.org/"
+      const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
     }
   }, [counter]);
 

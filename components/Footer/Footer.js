@@ -30,7 +30,7 @@ import { dropdown } from "constants/roadmap.js";
 const subList = (navLink) =>
   dropdown.map((item) => (
     <Link href={item.href} key={item.name}>
-      <a target="_blank" className={navLink}>
+      <a target="_blank" className={navLink} ref="noopener">
         {item.name}
       </a>
     </Link>
@@ -57,27 +57,10 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont,
   });
 
-  const caretClasses = classNames({
-    [classes.toggleIcon]: true,
-    [classes.caretActive]: Boolean(anchorEl),
-  });
   const subItemClasses = classNames({
     [classes.subItem]: true,
     [classes.navLink]: true,
   });
-
-  const onToggleMenu = () => {
-    setToggleMenu(!toggleMenu);
-  };
-
-  const handleClick = (event) => {
-    setToggleMenu(!toggleMenu);
-    if (anchorEl && anchorEl.contains(event.target)) {
-      setAnchorEl(null);
-    } else {
-      setAnchorEl(event.currentTarget);
-    }
-  };
 
   const closeMenu = () => {
     setAnchorEl(null);
@@ -95,6 +78,7 @@ export default function Footer(props) {
                   onClick={closeMenu}
                   target="_blank"
                   className={subItemClasses}
+                  ref="noopener"
                 >
                   {item.name}
                 </a>
@@ -120,7 +104,7 @@ export default function Footer(props) {
                 </Link>
               </Hidden>
             ) : item.name === "Whitepaper" ? (
-              <ListItem className={classes.listItem}>
+              <ListItem className={classes.listItem} key={item.name}>
                 <CustomDropdown
                   noLiPadding
                   navDropdown
