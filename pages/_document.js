@@ -55,6 +55,7 @@ class MyDocument extends Document {
             defer
             src="//js.hs-scripts.com/20329563.js"
           ></script> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-342366603"></script>
           <script
             type="text/javascript"
             charset="UTF-8"
