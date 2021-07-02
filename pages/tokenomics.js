@@ -53,6 +53,12 @@ export default function TokenomicsScreen(props) {
       },
       "google_translate_element"
     );
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-342366603');
   };
 
   return (

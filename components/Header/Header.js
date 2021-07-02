@@ -198,7 +198,7 @@ export default function Header(props) {
                 color="transparent"
                 className={classes.btn}
                 rel="noopener"
-                href={roadmap.link}
+                href="https://odoo.defifarms.org"
                 target="_blank"
               >
                 {t("buttonHeader")}
