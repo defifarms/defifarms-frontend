@@ -92,7 +92,7 @@ export default function LandingPage(props) {
     const timer =
       counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [counter]);
 
   useEffect(() => {
     if (counter === 0) {
