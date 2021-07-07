@@ -261,6 +261,36 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
                 Techtoday Newspaper
               </a>
             </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://www.cryptonewsz.com/defifarms-comes-with-combined-convenience-of-defi-and-nft/amp/?fbclid=IwAR3ySvH-nhLzwxuBMIok-IJqZZnMUaKHHjDLf_x2rHQmHAnCgmCcRBsPH34"
+              >
+                CryptoNewsz
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://techbullion.com/innovative-defi-ecosystem-is-disrupting-the-industry-with-nft-enhanced-yield-farming/amp/?fbclid=IwAR3-FN-FGQJBcEFaXE6kTlpMQoXwjqro_KrYMaHdv__HEpGs7v8SMIfB-mU"
+              >
+                Techbullion
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://in.news.yahoo.com/news/innovative-defi-ecosystem-disrupting-industry-055909907.html"
+              >
+                Yahoo Finance
+              </a>
+            </div>
           </div>
         </div>
       )}
