@@ -39,7 +39,7 @@ export const calculateTimeLeft = (date, callback, nextDate) => {
 
 export const getRoadmap = () => {
   for (let i = 0; i < roadmap.length; i++) {
-    if (+new Date(roadmap[i].date) - +new Date() > 0) {
+    if (+new Date(roadmap[i].date) - +new Date() > 0 || +new Date(roadmap[i].nextDate) - +new Date() > 0) {
       return roadmap[i];
     }
   }
