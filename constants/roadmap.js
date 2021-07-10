@@ -9,7 +9,8 @@ export const roadmap = [
   {
     title: "Private Sale",
     labels: ["Round 2.2", "Round 2.3"],
-    date: "Jul 10, 2021 22:00:00 EST",
+    //date: "Jul 10, 2021 22:00:00 EST",
+    date: "Jul 1, 2021 22:00:00 EST",
     nextDate: "Jul 15, 2021 22:00:00 EST",
     dateTitle: "Jul 10 10:00 PM EST",
     link: "http://bit.ly/defifarms",
