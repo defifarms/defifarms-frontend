@@ -78,6 +78,10 @@ const fungibleStyle = (theme) => ({
     color: "rgba(255, 255, 255, 0.8)",
     margin: "0",
     padding: "0",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "18px",
+      wordBreak: "break-all"
+    },
   },
   descriptionLink: {
     fontFamily: "Montserrat",
