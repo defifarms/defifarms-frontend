@@ -8,7 +8,8 @@ import Button from "@material-ui/core/Button";
 import Clock from "pages-sections/LandingPage-Sections/Clock.js";
 import { getRoadmap } from "helpers/times.js";
 import classNames from "classnames";
-import privateBg from "assets/img/private-sale.png";
+import privateBg from "assets/img/private-sale.gif";
+import video from "assets/img/video.mp4";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/bounce.js";
 const useStyles = makeStyles(styles);
 
@@ -81,9 +82,10 @@ export default function BounceSection() {
               alt="First slide"
               className={classes.privateBg}
             />
+           
           </div>
           <div className={classes.tokenWrapper}>
-            <h5 className={classes.description}>
+            <h5 className={classes.description1}>
               Congratulation you qualify for Buy DeFiFarms Coin (DEFIY)!
             </h5>
             <h5 className={classes.descriptionToken}>
@@ -94,7 +96,7 @@ export default function BounceSection() {
                 className={classes.token}
                 ref={refInput}
                 readOnly
-                value="0xA88165eE3389ca157680360974Cc13d4C01A3a20"
+                value="0xe690a04740c7d92e92287c8700986335CDB0320f"
               />
 
               <p className={classes.copy} onClick={onCoppy}>

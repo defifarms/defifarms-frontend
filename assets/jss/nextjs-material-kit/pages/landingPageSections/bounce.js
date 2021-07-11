@@ -61,6 +61,20 @@ const fungibleStyle = (theme) => ({
       fontSize: "24px",
     },
   },
+  description1: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "26px",
+    lineHeight: "32px",
+    letterSpacing: "-0.015em",
+    color: "rgba(255, 255, 255, 0.8)",
+    margin: "0",
+    padding: "5px 0 0",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "24px",
+    },
+  },
   descriptionToken: {
     fontFamily: "Montserrat",
     fontStyle: "normal",
