@@ -114,7 +114,7 @@ const fungibleStyle = (theme) => ({
     padding: "0",
     background: "transparent",
     border: "none",
-    width: "500px",
+    width: "530px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "12px",
     },
