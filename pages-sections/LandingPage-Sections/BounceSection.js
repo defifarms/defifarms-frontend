@@ -9,7 +9,6 @@ import Clock from "pages-sections/LandingPage-Sections/Clock.js";
 import { getRoadmap } from "helpers/times.js";
 import classNames from "classnames";
 import privateBg from "assets/img/private-sale.gif";
-import video from "assets/img/video.mp4";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/bounce.js";
 const useStyles = makeStyles(styles);
 
