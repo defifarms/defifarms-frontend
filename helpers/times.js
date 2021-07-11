@@ -24,6 +24,7 @@ export const calculateTimeLeft = (date, callback, nextDate) => {
     seconds: 0,
   };
 
+  return timeLeft
   if (difference > 0 || nextTime > 0) {
     timeLeft = {
       days: Math.floor(time / (1000 * 60 * 60 * 24)),
