@@ -115,7 +115,7 @@ const saleOptionStyles = (theme) => ({
   roundTitle: {
     ...text,
     fontWeight: "600",
-    fontSize: "24px",
+    fontSize: "23px",
     lineHeight: "46px",
     color: "#FEA23E",
     padding: "40px 0 32px",
