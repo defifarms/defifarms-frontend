@@ -6,6 +6,7 @@ const fungibleStyle = (theme) => ({
     height: "auto",
     display: "inherit",
     position: "relative",
+    zIndex: "-1",
     margin: "0",
     padding: "72px 40px",
     border: "0",
@@ -50,12 +51,73 @@ const fungibleStyle = (theme) => ({
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "24px",
+    fontSize: "26px",
+    lineHeight: "32px",
+    letterSpacing: "-0.015em",
+    color: "rgba(255, 255, 255, 0.8)",
+    margin: "0",
+    padding: "5px 0 0",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "24px",
+    },
+  },
+  description1: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "26px",
+    lineHeight: "32px",
+    letterSpacing: "-0.015em",
+    color: "rgba(255, 255, 255, 0.8)",
+    margin: "0",
+    padding: "5px 0 0",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "24px",
+    },
+  },
+  descriptionToken: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "20px",
     lineHeight: "32px",
     letterSpacing: "-0.015em",
     color: "rgba(255, 255, 255, 0.8)",
     margin: "0",
     padding: "0",
+  },
+  copy: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "20px",
+    lineHeight: "32px",
+    letterSpacing: "-0.015em",
+    color: "#FEA23E",
+    margin: "0",
+    padding: "0 0 0 20px",
+    cursor: "pointer",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "12px",
+      padding: "0 0 0 10px",
+    },
+  },
+  token: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "20px",
+    lineHeight: "32px",
+    letterSpacing: "-0.015em",
+    color: "rgba(255, 255, 255, 0.8)",
+    margin: "0",
+    padding: "0",
+    background: "transparent",
+    border: "none",
+    width: "530px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "11px",
+    },
   },
   descriptionLink: {
     fontFamily: "Montserrat",
@@ -97,6 +159,41 @@ const fungibleStyle = (theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "23px",
+    },
+  },
+  privateBgWrapper: {
+    maxWidth: "608px",
+    margin: "0 auto",
+    border: "8px solid #fff",
+    borderRadius: "3px",
+  },
+  privateBg: {
+    width: "100%"
+  },
+  tokenWrapper: {
+    border: "1px solid #FEA23E",
+    width: "fit-content",
+    borderRadius: "3px",
+    padding: "10px 30px",
+    textAlign: "center",
+    margin: "30px auto 0",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      padding: "10px"
+    },
+  },
+  main: {
+    paddingBottom: "300px"
+  },
+  privateWrapper: {
+    marginTop: "-230px"
+  },
+  flex: {
+    display: "flex",
+    padding: "7px 40px 7px 0",
+    justifyContent: "center",
+    [theme.breakpoints.down("sm")]: {
+      padding: "7px 0",
     },
   },
 });

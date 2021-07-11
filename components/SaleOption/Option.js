@@ -35,7 +35,7 @@ const Option = ({ title, options, date, nextDate }) => {
         timeLeft.status === "Sold Out" ? classes.gray : classes.options
       }
     >
-      <p className={classes.round}>{t(`${title}`)}</p>
+      <p className={classes.round}>{title}</p>
       <div>
         {options.map((item, index) => (
           <div key={item} className={classes.flex}>

@@ -7,16 +7,14 @@ import Button from "@material-ui/core/Button";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
 import image from "assets/img/bitmap.png";
+import banner from "assets/img/banner.gif";
 
 const useStyles = makeStyles(styles);
 
 export default function ProductSection() {
   const classes = useStyles();
   const { t } = useTranslation("common");
-  const [value, setValue] = React.useState("");
-  const onchange = (e) => {
-    setValue(e.target.value);
-  };
+
   return (
     <>
       <div
@@ -28,52 +26,28 @@ export default function ProductSection() {
           textAlign: "center",
         }}
       >
-        <h5 className={classes.description}>{t("Section 2")}</h5>
-        <h5 className={classes.description}>
-          Powered by <span className={classes.icon} />
-        </h5>
-        <Button
-          color="transparent"
-          color="transparent"
-          className={classes.btn}
-          href="https://t.me/DefifarmsNFT"
-          target="_blank"
-          rel="noopener"
-        >
-          {t("Join The Community")}
-        </Button>
+        <div className={classes.bannerWrapper}>
+          <img
+            src={banner}
+            alt="First slide"
+            className={classes.banner}
+          />
+          <h5 className={classes.description}>{t("Section 2")}</h5>
+          <h5 className={classes.description}>
+            Powered by <span className={classes.icon} />
+          </h5>
+          <Button
+            color="transparent"
+            color="transparent"
+            className={classes.btn}
+            href="https://t.me/DefifarmsNFT"
+            target="_blank"
+            rel="noopener"
+          >
+            {t("Join The Community")}
+          </Button>
+        </div>
       </div>
-      {/* <div id="revue-embed" className={classes.formWrapper}>
-        <form
-          action="https://www.getrevue.co/profile/defifarms/add_subscriber"
-          method="post"
-          id="revue-form"
-          name="revue-form"
-          target="_blank"
-        >
-          <label className={classes.label}>Subscribe to our newsletter</label>
-          <div className={classes.formGroup}>
-            <input
-              className={classes.input}
-              placeholder="Your email address..."
-              type="email"
-              name="member[email]"
-              id="member_email"
-              onChange={onchange}
-            />
-            <button
-              type="submit"
-              value="Subscribe"
-              name="member[subscribe]"
-              id="member_submit"
-              //disabled={!value}
-              className={classes.btnSub}
-            >
-              Subscribe
-            </button>
-          </div>
-        </form>
-      </div> */}
     </>
   );
 }
