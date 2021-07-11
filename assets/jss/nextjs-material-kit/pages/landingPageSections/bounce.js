@@ -116,7 +116,7 @@ const fungibleStyle = (theme) => ({
     border: "none",
     width: "530px",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "12px",
+      fontSize: "11px",
     },
   },
   descriptionLink: {
