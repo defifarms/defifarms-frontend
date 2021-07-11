@@ -23,8 +23,7 @@ export const calculateTimeLeft = (date, callback, nextDate) => {
     minutes: 0,
     seconds: 0,
   };
-  const newtimeLeft = timeLeft
-  // return timeLeft
+
   if (difference > 0 || nextTime > 0) {
     timeLeft = {
       days: Math.floor(time / (1000 * 60 * 60 * 24)),
@@ -35,7 +34,7 @@ export const calculateTimeLeft = (date, callback, nextDate) => {
     callback && callback(timeLeft);
   }
 
-  return { ...newtimeLeft, status: "Sold Out" };
+  return { ...timeLeft, status: "Sold Out" };
 };
 
 export const getRoadmap = () => {
