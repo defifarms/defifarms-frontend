@@ -1,5 +1,5 @@
 import React, { useRef, useCallback, useEffect, useState } from "react";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider, createMuiTheme, makeStyles } from "@material-ui/core/styles";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import HubspotForm from 'react-hubspot-form'
@@ -29,7 +29,18 @@ const theme = createMuiTheme({
   },
 });
 
+const styles = {
+  hub: {
+    width: "fit-content",
+    margin: "auto",
+    paddingTop: "20px",
+  }
+}
+
+const useStyles = makeStyles(styles);
+
 export default function LandingPage(props) {
+  const classes = useStyles();
   const refStaking = useRef();
   const refLocking = useRef();
   const refTeam = useRef();
@@ -110,6 +121,7 @@ export default function LandingPage(props) {
           moveToLocking={moveToLocking}
         />
         <ProductSection />
+        <div className={classes.hub}>
           <HubspotForm
             region="na1"
             portalId='20329563'
@@ -117,7 +129,8 @@ export default function LandingPage(props) {
             onSubmit={() => console.log('Submit!')}
             onReady={(form) => console.log('Form ready!')}
             loading={<div>Loading...</div>}
-          />      
+          />    
+        </div>  
         <Fungible />
         <BounceSection />
         <Staking
