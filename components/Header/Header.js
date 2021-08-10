@@ -144,7 +144,7 @@ export default function Header(props) {
                 color="transparent"
                 className={classes.btn}
                 rel="noopener"
-                href="https://odoo.defifarms.org"
+                href="https://app.defifarms.org/"
                 target="_blank"
               >
                 {t("buttonHeader")}
@@ -198,7 +198,7 @@ export default function Header(props) {
                 color="transparent"
                 className={classes.btn}
                 rel="noopener"
-                href="https://odoo.defifarms.org"
+                href="https://app.defifarms.org/"
                 target="_blank"
               >
                 {t("buttonHeader")}
