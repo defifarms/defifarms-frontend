@@ -27,11 +27,17 @@ export default function ProductSection() {
         }}
       >
         <div className={classes.bannerWrapper}>
+          <a
+          href="https://app.defifarms.org/"
+          target="_blank"
+          rel="noopener">
           <img
             src={banner}
             alt="First slide"
             className={classes.banner}
           />
+          </a>
+          
           <h5 className={classes.description}>{t("Section 2")}</h5>
           <h5 className={classes.description}>
             Powered by <span className={classes.icon} />
