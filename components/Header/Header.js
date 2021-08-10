@@ -18,7 +18,6 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import { getRoadmap } from "helpers/times.js";
 
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
@@ -54,11 +53,6 @@ const useStyles = makeStyles(styles);
 //   },
 // ];
 export default function Header(props) {
-  const [roadmap, setRoadmap] = useState({});
-  useEffect(() => {
-    setRoadmap(getRoadmap());
-  }, []);
-
   const { t } = useTranslation("common");
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -144,7 +138,7 @@ export default function Header(props) {
                 color="transparent"
                 className={classes.btn}
                 rel="noopener"
-                href={roadmap.link}
+                href="https://app.defifarms.org/"
                 target="_blank"
               >
                 {t("buttonHeader")}
@@ -198,7 +192,7 @@ export default function Header(props) {
                 color="transparent"
                 className={classes.btn}
                 rel="noopener"
-                href={roadmap.link}
+                href="https://app.defifarms.org/"
                 target="_blank"
               >
                 {t("buttonHeader")}

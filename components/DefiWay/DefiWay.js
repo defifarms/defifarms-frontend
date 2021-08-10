@@ -23,6 +23,7 @@ import cesar from "assets/img/avatar/cesar.jpeg";
 import harrik from "assets/img/avatar/harrik.jpeg";
 import markas from "assets/img/avatar/markas.jpeg";
 import zackhary from "assets/img/avatar/zackhary.jpeg";
+import basicCapitan from 'assets/img/basics-capital.png'
 
 import styles from "assets/jss/nextjs-material-kit/components/defiWay.js";
 
@@ -148,6 +149,15 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
             <div className={classes.partnersIcon}>
               <Image
                 src={nodle}
+                alt="nodle"
+                width="150"
+                height="50"
+                layout="intrinsic"
+              />
+            </div>
+            <div className={classes.partnersIcon}>
+              <Image
+                src={basicCapitan}
                 alt="nodle"
                 width="150"
                 height="50"
