@@ -80,3 +80,82 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+.hs-input {
+  width: 300px;
+  color: #FEA23E;
+    border: 1px solid #FEA23E;
+    cursor: pointer;
+    height: 59px;
+    margin: 0;
+    padding: 16px 24px;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: SF UI Text;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 6px;
+    letter-spacing: -0.015em;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.hs-button {
+  
+  color: #fff !important;
+    margin: 0 0 0 7px;
+    padding: 11px 52px;
+    font-size: 20px;
+    background: linear-gradient(
+97.41deg
+, #FEA23E 5.75%, #D6B402 103.93%);
+    font-style: normal;
+    transition: none;
+    font-family: SF UI Text;
+    font-weight: 600;
+    line-height: 36px;
+    border-radius: 6px;
+    text-transform: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hs-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px 0;
+}
+
+.hs-error-msgs {
+  display: none !important;
+}
+
+#label-email-faeaca18-a4ba-4d8a-8100-dc67728e39b6 {
+  font-size: 20px;
+  font-family: SF UI Text;
+}
+.input {
+  padding-top: 7px;
+}
+.submitted-message {
+  font-size: 20px;
+  font-family: SF UI Text;
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .hs-input {
+    width: 100%;
+  }
+
+  .hs-form {
+    display: block;
+  }
+
+  .hs-button {
+    margin-top: 17px;
+  }
+}

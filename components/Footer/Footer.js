@@ -30,7 +30,7 @@ import { dropdown } from "constants/roadmap.js";
 const subList = (navLink) =>
   dropdown.map((item) => (
     <Link href={item.href} key={item.name}>
-      <a target="_blank" className={navLink} ref="noopener">
+      <a target="_blank" className={navLink} rel="noopener">
         {item.name}
       </a>
     </Link>
@@ -78,7 +78,7 @@ export default function Footer(props) {
                   onClick={closeMenu}
                   target="_blank"
                   className={subItemClasses}
-                  ref="noopener"
+                  rel="noopener"
                 >
                   {item.name}
                 </a>
@@ -137,6 +137,7 @@ export default function Footer(props) {
                 href="https://twitter.com/DeFiFarmsNFTs"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={icon5} alt="First slide" />
@@ -145,6 +146,7 @@ export default function Footer(props) {
                 href="https://t.me/DefifarmsNFT"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={icon4} alt="First slide" />
@@ -153,6 +155,7 @@ export default function Footer(props) {
                 href="https://www.linkedin.com/company/defifarms-inc"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={linkedin} alt="First slide" />
@@ -161,6 +164,7 @@ export default function Footer(props) {
                 href="https://medium.com/@DefiFarmsNFTs"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={medium} alt="First slide" />
@@ -169,6 +173,7 @@ export default function Footer(props) {
                 href="https://github.com/defifarms"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={icon2} alt="First slide" />
@@ -177,6 +182,7 @@ export default function Footer(props) {
                 href="https://bscscan.com/token/0x2307DfB065CF1c9c5bC0f3435b49830C0AB86847"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img src={icon3} alt="First slide" />
@@ -185,6 +191,7 @@ export default function Footer(props) {
                 href="https://www.reddit.com/user/DeFiFarmsNFTs"
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btn}
               >
                 <img
@@ -196,7 +203,7 @@ export default function Footer(props) {
             </div>
             <div className={classes.text}>
               DeFiFarms &copy; {1900 + new Date().getYear()} All Rights Reserved
-              | Power by <span className={classes.icon} /> Binance Smart Chain
+              | Power by <span className={classes.icon} />
             </div>
           </div>
         </footer>

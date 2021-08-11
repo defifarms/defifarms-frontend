@@ -141,6 +141,15 @@ const productStyle = (theme) => ({
     alignItems: "flex-end",
     paddingTop: "40px",
   },
+  bannerWrapper: {
+    width: "fit-content",
+    margin: "auto",
+  },
+  banner: {
+    width: "100%",
+    heigh: "auto",
+    margin: "0 0 20px"
+  }
 });
 
 export default productStyle;

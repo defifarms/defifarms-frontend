@@ -75,6 +75,7 @@ const Team = ({ name, image, position, linkedin }) => {
       <Button
         color="transparent"
         target="_blank"
+        re="noopener"
         className={classes.btnTeam}
         href={linkedin}
       >
@@ -114,6 +115,7 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
                 target="_blank"
                 className={classes.btn}
                 href={roadmap.link}
+                re="noopener"
                 target="_blank"
               >
                 Join {roadmap.title}
@@ -121,6 +123,7 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
               <Button
                 color="transparent"
                 target="_blank"
+                re="noopener"
                 className={classes.btnContact}
                 href="mailto:contact@defifarms.org"
               >
@@ -146,6 +149,15 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
           </div>
           <h5 className={classes.partners}>Ecosystem Partners</h5>
           <div className={classes.partnersWrapper}>
+          <div className={classes.partnersIcon}>
+              <Image
+                src={basicCapitan}
+                alt="nodle"
+                width="150"
+                height="50"
+                layout="intrinsic"
+              />
+            </div>
             <div className={classes.partnersIcon}>
               <Image
                 src={nodle}
@@ -252,6 +264,7 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
             <div className={classes.partnersIcon}>
               <a
                 target="_blank"
+                re="noopener"
                 className={classes.descriptionLink}
                 href="https://www.einnews.com/pr_news/542577199/defifarms-is-using-the-power-of-nft-s-to-revolutionize-the-decentralized-finance-world"
               >
@@ -261,10 +274,41 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
             <div className={classes.partnersIcon}>
               <a
                 target="_blank"
+                re="noopener"
                 className={classes.descriptionLink}
                 href="https://techtodaynewspaper.com/defifarms-is-using-the-power-of-nfts-to-revolutionize-the-decentralized-finance-world/"
               >
                 Techtoday Newspaper
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://www.cryptonewsz.com/defifarms-comes-with-combined-convenience-of-defi-and-nft/amp/?fbclid=IwAR3ySvH-nhLzwxuBMIok-IJqZZnMUaKHHjDLf_x2rHQmHAnCgmCcRBsPH34"
+              >
+                CryptoNewsz
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://techbullion.com/innovative-defi-ecosystem-is-disrupting-the-industry-with-nft-enhanced-yield-farming/amp/?fbclid=IwAR3-FN-FGQJBcEFaXE6kTlpMQoXwjqro_KrYMaHdv__HEpGs7v8SMIfB-mU"
+              >
+                Techbullion
+              </a>
+            </div>
+            <div className={classes.partnersIcon}>
+              <a
+                target="_blank"
+                re="noopener"
+                className={classes.descriptionLink}
+                href="https://in.news.yahoo.com/news/innovative-defi-ecosystem-disrupting-industry-055909907.html"
+              >
+                Yahoo Finance
               </a>
             </div>
           </div>

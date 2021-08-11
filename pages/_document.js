@@ -48,13 +48,14 @@ class MyDocument extends Document {
             async
             src="https://translate.googleapis.com/translate_static/js/element/main.js"
           ></script>
-          {/* <script
+          <script
             type="text/javascript"
             id="hs-script-loader"
             async
             defer
             src="//js.hs-scripts.com/20329563.js"
-          ></script> */}
+          ></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-342366603"></script>
           <script
             type="text/javascript"
             charset="UTF-8"

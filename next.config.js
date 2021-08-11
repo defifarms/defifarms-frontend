@@ -5,7 +5,9 @@ const webpack = require("webpack");
 const path = require("path");
 const withFonts = require("next-fonts");
 const { i18n } = require("./next-i18next.config");
-module.exports = withPlugins([[withSass], [withImages], [withFonts]], {
+const withVideos = require('next-videos')
+
+module.exports = withPlugins([[withSass], [withImages], [withFonts], [withVideos]], {
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
     return config;
