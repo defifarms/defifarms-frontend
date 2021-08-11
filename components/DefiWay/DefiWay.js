@@ -167,15 +167,6 @@ const DefiWay = forwardRef(({ bgImage, title, isMain }, ref) => {
                 layout="intrinsic"
               />
             </div>
-            <div className={classes.partnersIcon}>
-              <Image
-                src={basicCapitan}
-                alt="nodle"
-                width="150"
-                height="50"
-                layout="intrinsic"
-              />
-            </div>
           </div>
           <h5 className={classes.partners}>Strategic Investors</h5>
           <div className={classes.partnersWrapper}>

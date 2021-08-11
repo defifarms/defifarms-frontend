@@ -83,6 +83,16 @@ const tokenomicsStyles = (theme) => ({
       lineHeight: "22px",
     },
   },
+  newToken: {
+    fontSize: "25px",
+    paddingTop: "20px"
+  },
+  newTokenValue: {
+    fontSize: "25px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "20px",
+    },
+  },
   tokenomicsItem: {
     maxWidth: "956px",
     display: "flex",
