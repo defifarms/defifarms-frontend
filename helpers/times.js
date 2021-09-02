@@ -34,7 +34,7 @@ export const calculateTimeLeft = (date, callback, nextDate) => {
     callback && callback(timeLeft);
   }
 
-  return { ...timeLeft, status: "Sold Out" };
+  return { ...timeLeft, status };
 };
 
 export const getRoadmap = () => {

@@ -13,14 +13,14 @@ export const roadmap = [
     date: "Jul 1, 2021 22:00:00 EST",
     nextDate: "Jul 15, 2021 22:00:00 EST",
     dateTitle: "Jul 10 10:00 PM EST",
-    link: "http://bit.ly/defifarms",
+    //link: "http://bit.ly/defifarms",
   },
   {
     title: "IDO Sale",
     labels: ["Round 3.2", "Round 3.3"],
-    date: "Jul 20, 2021 22:00:00 EST",
-    nextDate: "Jul 25, 2021 22:00:00 EST",
-    dateTitle: "Jul 20 10:00 PM EST",
+    date: "Sep 21, 2021 22:00:00 EST",
+    nextDate: "Sep 30, 2021 22:00:00 EST",
+    dateTitle: "Sep 21 10:00 PM EST",
     link: "http://bit.ly/defifarms2",
   },
 ];
